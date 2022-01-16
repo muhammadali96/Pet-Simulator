@@ -7,18 +7,15 @@ public class MoveScript : MonoBehaviour
 {
     public float speed = 0.01f;
     public Text scoreText;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Joystick joystick;
+ 
 
     // Update is called once per frame
     void Update()
     {
-        float xinput = Input.GetAxis("Horizontal");
+        float xinput = joystick.Horizontal;
 
-        float yinput = Input.GetAxis("Vertical");
+        float yinput = joystick.Vertical;
 
         //transform.Translate(speed * xinput, speed * yinput, 0);
         float x = Mathf.Clamp(transform.position.x + speed * xinput, -3.3f,3.2f);
