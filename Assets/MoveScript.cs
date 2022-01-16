@@ -21,10 +21,9 @@ public class MoveScript : MonoBehaviour
         float yinput = Input.GetAxis("Vertical");
 
         //transform.Translate(speed * xinput, speed * yinput, 0);
-        float x = Mathf.Clamp(transform.position.x + speed * xinput, -6f,6f);
-        float y = Mathf.Clamp(transform.position.y + speed * yinput, -3f,1.5f);
+        float x = Mathf.Clamp(transform.position.x + speed * xinput, -3.3f,3.2f);
+        float y = Mathf.Clamp(transform.position.y + speed * yinput, -1.5f,0.9f);
         transform.position = new Vector3(x, y, 0);
-
         if(Input.GetKeyDown(KeyCode.Space)) {
             scoreText.text = "score:" + Random.Range(100,1000);
         }
