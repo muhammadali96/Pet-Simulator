@@ -20,7 +20,6 @@ public class MoveScript : MonoBehaviour
             pet.SendMessage("DeselectForMovement");
         }
 
-        Debug.Log("clicked" + gameObject.name + Random.value);
         isPetSelected = true;
 
 
@@ -28,7 +27,6 @@ public class MoveScript : MonoBehaviour
     void DeselectForMovement()
     {
         isPetSelected = false;
-        Debug.Log("deselected" + gameObject.name + Random.value);
     }
 
 
