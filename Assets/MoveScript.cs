@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class MoveScript : MonoBehaviour
 {
+
+    public Sprite selectedSprite;
+    public Sprite deselectedSprite;
+
     public float speed = 0.01f;
     public Text scoreText;
     public Joystick joystick;
     private bool isPetSelected = false;
-
 
     private void OnMouseDown()
     {
@@ -18,16 +22,34 @@ public class MoveScript : MonoBehaviour
         foreach (GameObject pet in allPets)
         {
             pet.SendMessage("DeselectForMovement");
+
         }
 
         isPetSelected = true;
+        ChangeToSelectedSprite();
+
 
 
     }
+
+    void ChangeToSelectedSprite()
+    {
+        SpriteRenderer mySpriteRenderer = GetComponent<SpriteRenderer>();
+        mySpriteRenderer.sprite = selectedSprite;
+    }
+
+    void ChangeToDeselectedSprite()
+    {
+        SpriteRenderer mySpriteRenderer = GetComponent<SpriteRenderer>();
+        mySpriteRenderer.sprite = deselectedSprite;
+    }
+
     void DeselectForMovement()
     {
         isPetSelected = false;
-    }
+        ChangeToDeselectedSprite();
+        
+     }
 
 
     // Update is called once per frame
