@@ -39,7 +39,6 @@ public class MoveScript : MonoBehaviour
             yield return null;
         }
         transform.position = touchPosition;
-        Debug.Log(duration);
     }
 
 
@@ -50,40 +49,25 @@ public class MoveScript : MonoBehaviour
         {
             return;
         }
-        
+
 
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
-            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
-            //touchPosition.z = 0f;
+            if (touch.phase == TouchPhase.Ended)
+            {
+                Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
 
-            float x = Mathf.Clamp(touchPosition.x, -3.3f, 3.2f);
-            float y = Mathf.Clamp(touchPosition.y, -1.5f, 0.9f);
+                float x = Mathf.Clamp(touchPosition.x, -3.3f, 3.2f);
+                float y = Mathf.Clamp(touchPosition.y, -1.5f, 0.9f);
 
-            Vector3 constrainedTouchPosition = new Vector3(x, y, 0);
+                Vector3 constrainedTouchPosition = new Vector3(x, y, 0);
 
-            StartCoroutine(LerpPosition(constrainedTouchPosition, 3));
+                StartCoroutine(LerpPosition(constrainedTouchPosition, 3));
+            }
         }
-
-
-
-
-        
-        //float xinput = joystick.Horizontal;
-
-        //float yinput = joystick.Vertical;
-
-        ////transform.Translate(speed * xinput, speed * yinput, 0);
-        //float x = Mathf.Clamp(transform.position.x + speed * xinput, -3.3f, 3.2f);
-        //float y = Mathf.Clamp(transform.position.y + speed * yinput, -1.5f, 0.9f);
-        //transform.position = new Vector3(x, y, 0);
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    scoreText.text = "score:" + Random.Range(100, 1000);
-        //}
     }
-   
+
 
 }
 
