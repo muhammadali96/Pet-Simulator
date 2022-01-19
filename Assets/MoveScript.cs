@@ -5,9 +5,7 @@ using UnityEngine.UI;
 
 public class MoveScript : MonoBehaviour
 {
-    public float speed = 0.01f;
     public Text scoreText;
-    public Joystick joystick;
     private bool isPetSelected = false;
 
 
@@ -29,6 +27,20 @@ public class MoveScript : MonoBehaviour
         isPetSelected = false;
     }
 
+    IEnumerator LerpPosition(Vector2 touchPosition, float duration)
+    {
+        float time = 0;
+        Vector2 startPosition = transform.position;
+
+        while (time < duration)
+        {
+            transform.position = Vector2.Lerp(startPosition, touchPosition, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        transform.position = touchPosition;
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -37,18 +49,25 @@ public class MoveScript : MonoBehaviour
         {
             return;
         }
-        float xinput = joystick.Horizontal;
 
-        float yinput = joystick.Vertical;
 
-        //transform.Translate(speed * xinput, speed * yinput, 0);
-        float x = Mathf.Clamp(transform.position.x + speed * xinput, -3.3f, 3.2f);
-        float y = Mathf.Clamp(transform.position.y + speed * yinput, -1.5f, 0.9f);
-        transform.position = new Vector3(x, y, 0);
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.touchCount > 0)
         {
-            scoreText.text = "score:" + Random.Range(100, 1000);
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Ended)
+            {
+                Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+
+                float x = Mathf.Clamp(touchPosition.x, -3.3f, 3.2f);
+                float y = Mathf.Clamp(touchPosition.y, -1.5f, 0.9f);
+
+                Vector3 constrainedTouchPosition = new Vector3(x, y, 0);
+
+                StartCoroutine(LerpPosition(constrainedTouchPosition, 3));
+            }
         }
     }
 
+
 }
+
