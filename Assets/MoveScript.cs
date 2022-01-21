@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class MoveScript : MonoBehaviour
 {
     public Text scoreText;
     private bool isPetSelected = false;
-
 
     private void OnMouseDown()
     {
@@ -16,16 +16,34 @@ public class MoveScript : MonoBehaviour
         foreach (GameObject pet in allPets)
         {
             pet.SendMessage("DeselectForMovement");
+
         }
 
         isPetSelected = true;
+        ChangeToSelectedSprite();
+
 
 
     }
+
+    void ChangeToSelectedSprite()
+    {
+        SpriteRenderer mySpriteRenderer = GetComponent<SpriteRenderer>();
+        mySpriteRenderer.sprite = selectedSprite;
+    }
+
+    void ChangeToDeselectedSprite()
+    {
+        SpriteRenderer mySpriteRenderer = GetComponent<SpriteRenderer>();
+        mySpriteRenderer.sprite = deselectedSprite;
+    }
+
     void DeselectForMovement()
     {
         isPetSelected = false;
-    }
+        ChangeToDeselectedSprite();
+        
+     }
 
     IEnumerator LerpPosition(Vector2 touchPosition, float duration)
     {
