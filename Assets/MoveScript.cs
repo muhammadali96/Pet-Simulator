@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class MoveScript : MonoBehaviour
 {
+    public Sprite selectedSprite;
+    public Sprite deselectedSprite;
     public Text scoreText;
     private bool isPetSelected = false;
 
