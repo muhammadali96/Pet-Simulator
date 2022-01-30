@@ -58,10 +58,11 @@ public class MoveScript : MonoBehaviour
     {
         if (isPetSelected)
         {
-            if (Input.touchCount > 0)
+            //replace touch with mouse for testing purposes
+            if ( Input.GetMouseButtonDown(0)) //Input.touchCount(0) > 0
             {
-                Touch touch = Input.GetTouch(0);
-                Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+                Vector3 touch = Input.mousePosition; //Input.GetTouch
+                Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch); //touch.position
 
                 float x = Mathf.Clamp(touchPosition.x, -3.3f, 3.2f);
                 float y = Mathf.Clamp(touchPosition.y, -1.5f, 0.9f);
