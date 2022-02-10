@@ -24,7 +24,7 @@ public class DetectLongClickPet1 : MonoBehaviour
 
         if (endTime - startTime > 0.5f)
         {
-            SceneManager.LoadScene("PetDescription");
+            SceneManager.LoadScene("Close Up Scene");
             startTime = 0f;
             endTime = 0f;
         }
