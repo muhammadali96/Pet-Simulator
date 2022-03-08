@@ -88,14 +88,18 @@ public class Tile : MonoBehaviour {
 	}
 
 	private GameObject GetAdjacent(Vector2 castDir) {
-		RaycastHit2D hit = Physics2D.Raycast(transform.position, castDir);
+		//Raycast is a physics function that projects a ray onto the scene, returning a boolean value if a target was successfully hit
+		//retrieve a single adjacent tile by sending a raycast in the target specified by castDir
+		RaycastHit2D hit = Physics2D.Raycast(this.gameObject.transform.position, castDir);
 		if (hit.collider != null) {
-			return hit.collider.gameObject;
+			//if tile is found in that direction return it's GameObject
+			return hit.collider.gameObject; //BUG IS HERE-THIS RETURNS THE TILE THAT HAS BEEN CLICKED EVERY ITERATION INSTEAD OF RETURNING ADJACENT TILES
 		}
 		return null;
 	}
 
 	private List<GameObject> GetAllAdjacentTiles() {
+		//uses GetAdjacent to generate a list of tiles surrounding the current tile, loops through all directions and adds any adjacent ones found to the adjacentDirections
 		List<GameObject> adjacentTiles = new List<GameObject>();
 		for (int i = 0; i < adjacentDirections.Length; i++) {
 			adjacentTiles.Add(GetAdjacent(adjacentDirections[i]));
