@@ -416,7 +416,7 @@ RectTransform:
   m_GameObject: {fileID: 1296693339}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 20081997}
   m_Father: {fileID: 582287692}
@@ -424,7 +424,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 472.7, y: 83.8}
+  m_AnchoredPosition: {x: 140, y: -87}
   m_SizeDelta: {x: 90, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1296693341
@@ -537,7 +537,7 @@ RectTransform:
   m_GameObject: {fileID: 1335784618}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2003353500}
   m_Father: {fileID: 582287692}
@@ -545,7 +545,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 472.7, y: 253.5}
+  m_AnchoredPosition: {x: 140, y: 82.7}
   m_SizeDelta: {x: 90, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1335784620
@@ -591,7 +591,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1335784621}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1631872466262304017, guid: c22353fc4ec2e49abbed0386d3f21819, type: 3}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: Match3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1335784621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -687,15 +699,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1537381707554138271, guid: 76466da133e914d07987ee8786c0d3ad, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1537381707554138271, guid: 76466da133e914d07987ee8786c0d3ad, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1537381707554138271, guid: 76466da133e914d07987ee8786c0d3ad, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1537381707554138271, guid: 76466da133e914d07987ee8786c0d3ad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -727,11 +739,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1537381707554138271, guid: 76466da133e914d07987ee8786c0d3ad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -318
+      value: -112
       objectReference: {fileID: 0}
     - target: {fileID: 1537381707554138271, guid: 76466da133e914d07987ee8786c0d3ad, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 265.82
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 1537381707554138271, guid: 76466da133e914d07987ee8786c0d3ad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -891,9 +903,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Minigame1
-
-'
+  m_Text: Match3
 --- !u!222 &2003353502
 CanvasRenderer:
   m_ObjectHideFlags: 0

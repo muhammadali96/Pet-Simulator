@@ -24,5 +24,9 @@ public class ButtonManager : MonoBehaviour
     {
         SceneManager.LoadScene("Task1");
     }
+    public void Match3()
+    {
+        SceneManager.LoadScene("Game");
+    }
 
 }
