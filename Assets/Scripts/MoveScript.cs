@@ -74,10 +74,6 @@ public class MoveScript : MonoBehaviour
                 Vector3 constrainedTouchPosition = new Vector3(x, y, 0);
                 targetPosition = constrainedTouchPosition;
 
-                horizontalMove = touch.x;
-                Debug.Log(horizontalMove);
-                animator.SetFloat("speed", Mathf.Abs(horizontalMove));
-
             }
 
         }
@@ -88,6 +84,10 @@ public class MoveScript : MonoBehaviour
             Vector3 stepVector = 0.1f * (targetPosition - transform.position);
 
             transform.position += stepVector;
+
+            horizontalMove = stepVector.x;
+            Debug.Log(horizontalMove);
+            animator.SetFloat("speed", Mathf.Abs(horizontalMove));
         }
         
         }
