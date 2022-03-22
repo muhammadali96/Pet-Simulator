@@ -6,11 +6,13 @@ using UnityEngine.UI;
 
 public class MoveScript : MonoBehaviour
 {
+    public Animator animator; 
     public Sprite selectedSprite;
     public Sprite deselectedSprite;
     public Text scoreText;
     private bool isPetSelected = false;
     private Vector3 targetPosition;
+    float horizontalMove = 0f;
 
     void Start()
     {
@@ -58,9 +60,11 @@ public class MoveScript : MonoBehaviour
     {
         if (isPetSelected)
         {
+           
             //replace touch with mouse for testing purposes
             if ( Input.GetMouseButtonDown(0)) //Input.touchCount(0) > 0
             {
+            
                 Vector3 touch = Input.mousePosition; //Input.GetTouch
                 Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch); //touch.position
 
@@ -69,6 +73,11 @@ public class MoveScript : MonoBehaviour
 
                 Vector3 constrainedTouchPosition = new Vector3(x, y, 0);
                 targetPosition = constrainedTouchPosition;
+
+                horizontalMove = touch.x;
+                Debug.Log(horizontalMove);
+                animator.SetFloat("speed", Mathf.Abs(horizontalMove));
+
             }
 
         }
