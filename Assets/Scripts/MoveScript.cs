@@ -13,6 +13,7 @@ public class MoveScript : MonoBehaviour
     private bool isPetSelected = false;
     private Vector3 targetPosition;
     float horizontalMove = 0f;
+    bool facingRight = true;
 
     void Start()
     {
@@ -82,10 +83,21 @@ public class MoveScript : MonoBehaviour
         if(targetPosition!=null)
         {
             Vector3 stepVector = 0.001f * (targetPosition - transform.position);
-            if (stepVector.magnitude > 0.001f) {
+            
+            if (stepVector.x > 0 && !facingRight)
+            {
+                Flip();
+            }
 
+            if (stepVector.x < 0 && facingRight)
+            {
+                Flip();
+            }
+
+            
+
+            if (stepVector.magnitude > 0.001f) { //stops sprite from sliding after it stops
             transform.position += stepVector;
-
             }
 
             horizontalMove = stepVector.x;
@@ -93,6 +105,16 @@ public class MoveScript : MonoBehaviour
         }
         
         }
+
+    void Flip ()
+    {
+        Vector3 currentScale = gameObject.transform.localScale;
+
+        currentScale.x *= -1;
+        gameObject.transform.localScale = currentScale;
+
+        facingRight = !facingRight;
+    }
 
 
 }
