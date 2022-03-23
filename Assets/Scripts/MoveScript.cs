@@ -81,12 +81,14 @@ public class MoveScript : MonoBehaviour
 
         if(targetPosition!=null)
         {
-            Vector3 stepVector = 0.1f * (targetPosition - transform.position);
+            Vector3 stepVector = 0.001f * (targetPosition - transform.position);
+            if (stepVector.magnitude > 0.001f) {
 
             transform.position += stepVector;
 
+            }
+
             horizontalMove = stepVector.x;
-            Debug.Log(horizontalMove);
             animator.SetFloat("speed", Mathf.Abs(horizontalMove));
         }
         
