@@ -6,11 +6,14 @@ using UnityEngine.UI;
 
 public class MoveScript : MonoBehaviour
 {
+    public Animator animator; 
     public Sprite selectedSprite;
     public Sprite deselectedSprite;
     public Text scoreText;
     private bool isPetSelected = false;
     private Vector3 targetPosition;
+    float horizontalMove = 0f;
+    bool facingRight = true;
 
     void Start()
     {
@@ -58,9 +61,11 @@ public class MoveScript : MonoBehaviour
     {
         if (isPetSelected)
         {
+           
             //replace touch with mouse for testing purposes
             if ( Input.GetMouseButtonDown(0)) //Input.touchCount(0) > 0
             {
+            
                 Vector3 touch = Input.mousePosition; //Input.GetTouch
                 Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch); //touch.position
 
@@ -69,6 +74,7 @@ public class MoveScript : MonoBehaviour
 
                 Vector3 constrainedTouchPosition = new Vector3(x, y, 0);
                 targetPosition = constrainedTouchPosition;
+
             }
 
         }
@@ -76,12 +82,39 @@ public class MoveScript : MonoBehaviour
 
         if(targetPosition!=null)
         {
-            Vector3 stepVector = 0.1f * (targetPosition - transform.position);
+            Vector3 stepVector = 0.001f * (targetPosition - transform.position);
+            
+            if (stepVector.x > 0 && !facingRight)
+            {
+                Flip();
+            }
 
+            if (stepVector.x < 0 && facingRight)
+            {
+                Flip();
+            }
+
+            
+
+            if (stepVector.magnitude > 0.001f) { //stops sprite from sliding after it stops
             transform.position += stepVector;
+            }
+
+            horizontalMove = stepVector.x;
+            animator.SetFloat("speed", Mathf.Abs(horizontalMove));
         }
         
         }
+
+    void Flip ()
+    {
+        Vector3 currentScale = gameObject.transform.localScale;
+
+        currentScale.x *= -1;
+        gameObject.transform.localScale = currentScale;
+
+        facingRight = !facingRight;
+    }
 
 
 }
