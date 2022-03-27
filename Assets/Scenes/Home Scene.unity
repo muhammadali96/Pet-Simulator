@@ -891,8 +891,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 250.18207, y: 0}
-  m_SizeDelta: {x: 510.364, y: 0}
+  m_AnchoredPosition: {x: 4.174286, y: 0}
+  m_SizeDelta: {x: 18.3484, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &629465704
 MonoBehaviour:
@@ -1112,7 +1112,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1140,7 +1140,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1153,9 +1153,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 660601640}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc73152e299afd348b4ec67a2ee1d1db, type: 3}
+  m_Script: {fileID: 11500000, guid: 321b5b81393eb4c1aac129f6b46442d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerBars: {fileID: 1293332789}
+  fillImage: {fileID: 629465704}
 --- !u!1 &764195674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,8 +1589,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 77.01099, y: 0}
-  m_SizeDelta: {x: 162.0219, y: 0}
+  m_AnchoredPosition: {x: 2.729309, y: 0}
+  m_SizeDelta: {x: 13.4586, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1225149011
 MonoBehaviour:
@@ -1736,11 +1738,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1293332781}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2b6c26152f7ac44d823a2d5f0ffa82c, type: 3}
+  m_Script: {fileID: 11500000, guid: c06a46229f9e34340b0f9d8fa5d712c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHunger: 3
-  currentHunger: 0
+  current_Level: 0
+  max_Level: 0
+  DelayAmount: 1
 --- !u!1 &1440017159
 GameObject:
   m_ObjectHideFlags: 0
@@ -1895,8 +1898,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 131.47, y: 0}
-  m_SizeDelta: {x: 262.93, y: 0}
+  m_AnchoredPosition: {x: 6.835388, y: 0}
+  m_SizeDelta: {x: 13.6607, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1495677258
 MonoBehaviour:
@@ -2325,6 +2328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1875342758}
   - component: {fileID: 1875342759}
+  - component: {fileID: 1875342760}
   m_Layer: 5
   m_Name: Mood Slider
   m_TagString: Untagged
@@ -2352,7 +2356,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 454, y: 976.22784}
+  m_AnchoredPosition: {x: -283.55, y: -48.256}
   m_SizeDelta: {x: 567.09, y: 233.7922}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1875342759
@@ -2402,10 +2406,24 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1875342760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875342757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 321b5b81393eb4c1aac129f6b46442d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerBars: {fileID: 1293332789}
+  fillImage: {fileID: 1225149011}
 --- !u!1 &2003812172
 GameObject:
   m_ObjectHideFlags: 0
@@ -2498,6 +2516,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2044558140}
   - component: {fileID: 2044558141}
+  - component: {fileID: 2044558142}
   m_Layer: 5
   m_Name: Energy Slider
   m_TagString: Untagged
@@ -2525,7 +2544,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -359, y: 976.99786}
+  m_AnchoredPosition: {x: -283.55, y: 215.31}
   m_SizeDelta: {x: 567.09, y: 235.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2044558141
@@ -2575,10 +2594,24 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2044558142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044558139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 321b5b81393eb4c1aac129f6b46442d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerBars: {fileID: 1293332789}
+  fillImage: {fileID: 1495677258}
 --- !u!1 &2105009967
 GameObject:
   m_ObjectHideFlags: 0
