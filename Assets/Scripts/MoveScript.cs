@@ -70,9 +70,10 @@ public class MoveScript : MonoBehaviour
                 Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch); //touch.position
 
                 float x = Mathf.Clamp(touchPosition.x, -3.3f, 3.2f);
-                float y = Mathf.Clamp(touchPosition.y, -1.5f, 0.9f);
+                float y = Mathf.Clamp(touchPosition.y, -1.5f, 0.0f);
 
                 Vector3 constrainedTouchPosition = new Vector3(x, y, 0);
+                
                 targetPosition = constrainedTouchPosition;
 
             }
@@ -96,7 +97,7 @@ public class MoveScript : MonoBehaviour
 
             
 
-            if (stepVector.magnitude > 0.001f) { //stops sprite from sliding after it stops
+            if (stepVector.magnitude > 0.0001f) { //stops sprite from sliding after it stops
             transform.position += stepVector;
             }
 

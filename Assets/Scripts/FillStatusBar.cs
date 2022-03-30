@@ -19,6 +19,12 @@ public class FillStatusBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(PlayerBars.max_Level == 0)
+        {
+            Debug.LogError("Max Level not set");
+            return;
+        }
+
         float fillValue = PlayerBars.current_Level / PlayerBars.max_Level;
 
         if(fillValue <= slider.maxValue / 3)
@@ -27,7 +33,7 @@ public class FillStatusBar : MonoBehaviour
         }
         else if(fillValue >= 2*slider.maxValue / 3 )
         {
-            fillImage.color = new Color(0f, 60f, 7f);
+            fillImage.color = new Color(0f, 0.2358491f, 0.02620547f);
         }
         else
         {
