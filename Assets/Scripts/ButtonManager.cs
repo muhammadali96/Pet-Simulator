@@ -9,7 +9,10 @@ public class ButtonManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
-
+    public void CloseUpBack()
+    {
+        SceneManager.LoadScene("Home Scene");
+    }
     public void ChangeLevel()
     {
         Debug.Log("changing level");

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 632839ed36585624987547f184e77066
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Jellybost
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 63e57a73021b07e4a960fc914dd3e88c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
