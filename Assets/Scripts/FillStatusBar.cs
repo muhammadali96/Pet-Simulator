@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class FillStatusBar : MonoBehaviour
 {
-    public PlayerBars PlayerBars;
+    public PlayerBar PlayerBar;
     public Image fillImage;
     private Slider slider;
 
@@ -19,13 +19,13 @@ public class FillStatusBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(PlayerBars.max_Level == 0)
+        if(PlayerBar.max_Level == 0)
         {
             Debug.LogError("Max Level not set");
             return;
         }
 
-        float fillValue = PlayerBars.current_Level / PlayerBars.max_Level;
+        float fillValue = PlayerBar.current_Level / PlayerBar.max_Level;
 
         if(fillValue <= slider.maxValue / 3)
         {

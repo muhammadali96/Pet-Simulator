@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerBars : MonoBehaviour
+public class PlayerBar : MonoBehaviour
 {
     public float current_Level;
     public float max_Level;

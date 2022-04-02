@@ -1097,7 +1097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 321b5b81393eb4c1aac129f6b46442d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerBars: {fileID: 1293332789}
+  PlayerBar: {fileID: 1293332789}
   fillImage: {fileID: 629465704}
 --- !u!1 &764195674
 GameObject:
@@ -2363,7 +2363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 321b5b81393eb4c1aac129f6b46442d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerBars: {fileID: 1293332789}
+  PlayerBar: {fileID: 1293332789}
   fillImage: {fileID: 1225149011}
 --- !u!1 &2003812172
 GameObject:
@@ -2551,7 +2551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 321b5b81393eb4c1aac129f6b46442d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerBars: {fileID: 1293332789}
+  PlayerBar: {fileID: 1293332789}
   fillImage: {fileID: 1495677258}
 --- !u!1 &2105009967
 GameObject:
