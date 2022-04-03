@@ -32,4 +32,10 @@ public class ButtonManager : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
+    public void ClearData()
+    {
+        SaveSystem.ClearPlayer();
+    }
+
+
 }
