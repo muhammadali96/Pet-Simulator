@@ -22,6 +22,7 @@ public static class SaveSystem
         string path = Application.persistentDataPath + "/player.cogshel";
         if (File.Exists(path))
         {
+            Debug.Log(path);
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(path, FileMode.Open);
 
@@ -34,6 +35,22 @@ public static class SaveSystem
         {
             Debug.LogError("Save file not found in " + path);
             return null;
+        }
+    }
+
+    public static void ClearPlayer ()
+    {
+        string path = Application.persistentDataPath + "/player.cogshel";
+        if (File.Exists(path))
+        {
+            File.Delete(path);
+            Debug.Log("deleted");
+
+
+        }
+        else
+        {
+            Debug.LogError("Save file not found in " + path);
         }
     }
 }
