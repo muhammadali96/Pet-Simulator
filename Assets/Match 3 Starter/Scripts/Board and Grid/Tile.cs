@@ -41,7 +41,7 @@ public class Tile : MonoBehaviour {
 		isSelected = true;
 		render.color = selectedColor;
 		previousSelected = gameObject.GetComponent<Tile>();
-		SFXManager.instance.PlaySFX(Clip.Select);
+		//SFXManager.instance.PlaySFX(Clip.Select);
 	}
 
 	private void Deselect() {
@@ -83,7 +83,7 @@ public class Tile : MonoBehaviour {
 		Sprite tempSprite = render2.sprite;
 		render2.sprite = render.sprite;
 		render.sprite = tempSprite;
-		SFXManager.instance.PlaySFX(Clip.Swap);
+		//SFXManager.instance.PlaySFX(Clip.Swap);
 		GUIManager.instance.MoveCounter--; // Add this line here
 	}
 
@@ -140,7 +140,7 @@ public class Tile : MonoBehaviour {
 			matchFound = false;
 			StopCoroutine(BoardManager.instance.FindNullTiles()); //Add this line
 			StartCoroutine(BoardManager.instance.FindNullTiles()); //Add this line
-			SFXManager.instance.PlaySFX(Clip.Clear);
+			//SFXManager.instance.PlaySFX(Clip.Clear);
 		}
 	}
 
