@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Close Up Scene.unity
     guid: 11d0069c81a064f31b43420ec8546241
   - enabled: 1
-    path: Assets/Scenes/Match 3 Scene.unity
+    path: Assets/Scenes/Breathe Scene.unity
     guid: b9a5f9952ef9c46458ea17241875538f
   - enabled: 0
     path: Assets/Match 3 Starter/Scenes/Menu.unity
