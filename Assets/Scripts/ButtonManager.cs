@@ -9,7 +9,7 @@ public class ButtonManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
-    public void CloseUpBack()
+    public void BackToHome()
     {
         SceneManager.LoadScene("Home Scene");
     }
@@ -30,6 +30,11 @@ public class ButtonManager : MonoBehaviour
     public void Match3()
     {
         SceneManager.LoadScene("Game");
+    }
+
+    public void Shop()
+    {
+        SceneManager.LoadScene("Shop Scene");
     }
 
     public void ClearData()
