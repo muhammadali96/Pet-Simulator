@@ -25,7 +25,7 @@ public class ButtonManager : MonoBehaviour
 
     public void Breathe()
     {
-        SceneManager.LoadScene("Match 3 Scene");
+        SceneManager.LoadScene("Breathe Scene");
     }
     public void Match3()
     {
