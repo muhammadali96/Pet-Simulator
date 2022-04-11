@@ -1620,7 +1620,7 @@ Animation:
   m_GameObject: {fileID: 1293332781}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 422e8b43d072cba4981cf77e4272d2e9, type: 2}
+  m_Animation: {fileID: 7400000, guid: a4c3f11e5a574414eb13f06d8415a9af, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: a4c3f11e5a574414eb13f06d8415a9af, type: 2}
   - {fileID: 7400000, guid: 422e8b43d072cba4981cf77e4272d2e9, type: 2}
