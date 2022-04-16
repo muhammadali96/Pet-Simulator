@@ -38,7 +38,7 @@ public class InventoryManagerScript : MonoBehaviour
     }
 
 
-    public void Buy()
+    public void Use()
     {
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
 
