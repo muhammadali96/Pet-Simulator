@@ -9,12 +9,10 @@ public class InventoryManagerScript : MonoBehaviour
 
     public int[,] shopItems = new int[6, 6];
     public float hunger;
-    public Text HungerTXT;
 
 
     void Start()
     {
-        HungerTXT.text = "Hunger: +" + hunger.ToString();
 
         //ID's
         shopItems[1, 1] = 1;
@@ -48,7 +46,6 @@ public class InventoryManagerScript : MonoBehaviour
         {
             hunger += shopItems[2, ButtonRef.GetComponent<InventoryButtonInfo>().ItemID];
             shopItems[3, ButtonRef.GetComponent<InventoryButtonInfo>().ItemID]--;
-            HungerTXT.text = "Hunger: +" + hunger.ToString();
             ButtonRef.GetComponent<InventoryButtonInfo>().QuantityTxt.text = shopItems[3, ButtonRef.GetComponent<InventoryButtonInfo>().ItemID].ToString();
         }
 
