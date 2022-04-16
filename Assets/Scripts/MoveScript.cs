@@ -67,14 +67,26 @@ public class MoveScript : MonoBehaviour
             //replace touch with mouse for testing purposes
             if ( Input.GetMouseButtonDown(0)) //Input.touchCount(0) > 0
             {
-            
+                float xLowerBound = -3.3f;
+                float xUpperBound = 3.2f;
+                float yLowerBound = -1.5f;
+                float yUpperBound = 0f;
+
                 Vector3 touch = Input.mousePosition; //Input.GetTouch
                 Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch); //touch.position
 
-                float x = Mathf.Clamp(touchPosition.x, -3.3f, 3.2f);
-                float y = Mathf.Clamp(touchPosition.y, -1.5f, 0.0f);
+                float x = Mathf.Clamp(touchPosition.x, xLowerBound, xUpperBound);
+                float y = Mathf.Clamp(touchPosition.y, yLowerBound, yUpperBound);
                 //normalize step vector
                 //when we're close to final position we stop
+
+                //Doesn't allow player to click above y clamp
+                if (y == yUpperBound)
+                {
+                    return;
+                }
+
+               
 
 
                 Vector3 constrainedTouchPosition = new Vector3(x, y, 0);
