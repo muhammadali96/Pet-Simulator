@@ -5,10 +5,19 @@ using UnityEngine;
 [System.Serializable]
 public class PlayerData
 {
-    public float current_level;
+    public float energyLevel;
+    public float hungerLevel;
+    public float moodLevel;
 
-    public PlayerData(PlayerBar PlayerBar)
+    public PlayerData(float givenEnergyLevel, float givenHungerLevel, float givenMoodLevel)
     {
-        current_level = PlayerBar.current_Level;
+        energyLevel = givenEnergyLevel;
+        hungerLevel = givenHungerLevel;
+        moodLevel = givenMoodLevel;
+    }
+
+    public void Display()
+    {
+        Debug.LogFormat("e:{0}, h:{1}, m:{2}", energyLevel, hungerLevel, moodLevel);
     }
 }

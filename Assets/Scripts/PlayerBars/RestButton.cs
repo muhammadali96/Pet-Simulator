@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SleepButton : MonoBehaviour
+public class RestButton : MonoBehaviour
 {
     public EnergyBar energyBar;
 
