@@ -45,6 +45,9 @@ public class ButtonManager : MonoBehaviour
     {
         SaveSystem.ClearPlayer();
     }
-
+    public void SaveData()
+    {
+        SaveSystem.SaveGameState();
+    }
 
 }
