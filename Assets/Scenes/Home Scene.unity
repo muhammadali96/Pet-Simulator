@@ -1881,8 +1881,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 832549995}
-        m_TargetAssemblyTypeName: SleepButton, Assembly-CSharp
-        m_MethodName: Sleep
+        m_TargetAssemblyTypeName: RestButton, Assembly-CSharp
+        m_MethodName: Rest
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
