@@ -1791,11 +1791,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 660601640}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 321b5b81393eb4c1aac129f6b46442d8, type: 3}
+  m_Script: {fileID: 11500000, guid: c06a46229f9e34340b0f9d8fa5d712c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energyBar: {fileID: 1293332787}
   fillImage: {fileID: 629465704}
+  currentLevel: 8
+  maxLevel: 10
+  Delay: 5
 --- !u!1 &764195674
 GameObject:
   m_ObjectHideFlags: 0
@@ -2600,51 +2602,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.3282256, y: 8.635307}
   m_EdgeRadius: 0
---- !u!114 &1293332787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1293332781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 042e5d34ccc62471eb50c07ed558b483, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentLevel: 10
-  maxLevel: 10
-  DelayAmount: 1
---- !u!114 &1293332789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1293332781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c06a46229f9e34340b0f9d8fa5d712c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentLevel: 5
-  maxLevel: 10
-  DelayAmount: 10
---- !u!114 &1293332791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1293332781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87c05edb3f1374cab982bea7545495dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentLevel: 3
-  maxLevel: 10
-  DelayAmount: 1
 --- !u!1 &1311735528
 GameObject:
   m_ObjectHideFlags: 0
@@ -3809,8 +3766,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 321b5b81393eb4c1aac129f6b46442d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energyBar: {fileID: 1293332787}
   fillImage: {fileID: 1225149011}
+  currentLevel: 5
+  maxLevel: 10
+  DelayAmount: 5
 --- !u!1 &1940924356
 GameObject:
   m_ObjectHideFlags: 0
@@ -4205,11 +4164,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2044558139}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 321b5b81393eb4c1aac129f6b46442d8, type: 3}
+  m_Script: {fileID: 11500000, guid: 042e5d34ccc62471eb50c07ed558b483, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energyBar: {fileID: 1293332787}
   fillImage: {fileID: 1495677258}
+  currentLevel: 10
+  maxLevel: 10
+  Delay: 5
 --- !u!1 &2105009967
 GameObject:
   m_ObjectHideFlags: 0

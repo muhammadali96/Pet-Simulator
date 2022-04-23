@@ -8,13 +8,13 @@ public static class SaveSystem
     public static void SaveGameState () //Energy, hunger, mood
     {
         GameObject tiger = GameObject.Find("Tiger");
-        EnergyBar energyBar = tiger.GetComponent<EnergyBar>();
+        EnergyFillStatusBar energyBar = tiger.GetComponent<EnergyFillStatusBar>();
         float energyLevel = energyBar.currentLevel;
 
-        HungerBar hungerBar = tiger.GetComponent<HungerBar>();
+        HungerFillStatusBar hungerBar = tiger.GetComponent<HungerFillStatusBar>();
         float hungerLevel = hungerBar.currentLevel;
 
-        MoodBar moodBar = tiger.GetComponent<MoodBar>();
+        MoodFillStatusBar moodBar = tiger.GetComponent<MoodFillStatusBar>();
         float moodLevel = moodBar.currentLevel;
         
         

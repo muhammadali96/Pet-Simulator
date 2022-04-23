@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class RestButton : MonoBehaviour
 {
-    public EnergyBar energyBar;
+    public EnergyFillStatusBar energyBar;
 
-    public void Sleep()
+    public void Rest()
     {
-        energyBar.currentLevel--;
+        energyBar.currentLevel++;
     }
 }

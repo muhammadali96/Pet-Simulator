@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SleepButton : MonoBehaviour
 {
-    public EnergyBar energyBar;
+    public EnergyFillStatusBar energyBar;
 
     public void Sleep()
     {
