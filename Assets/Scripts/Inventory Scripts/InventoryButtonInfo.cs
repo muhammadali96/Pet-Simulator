@@ -14,7 +14,7 @@ public class InventoryButtonInfo : MonoBehaviour
 
     void Update()
     {
-        StatsTxt.text = "Hunger: +" + InventoryManager.GetComponent<InventoryManagerScript>().shopItems[2, ItemID].ToString();
+        StatsTxt.text = "+" + InventoryManager.GetComponent<InventoryManagerScript>().shopItems[2, ItemID].ToString();
         QuantityTxt.text = InventoryManager.GetComponent<InventoryManagerScript>().shopItems[3, ItemID].ToString();
     }
 }

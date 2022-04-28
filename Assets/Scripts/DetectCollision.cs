@@ -5,20 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class DetectCollision : MonoBehaviour
 {
+    public HungerFillStatusBar hungerBar;
+    public GameObject InventoryManager;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("collision detected" + collision.gameObject.name);
-        SceneManager.LoadScene("Level2");
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (collision.gameObject.name.Contains("bread")) 
+        {
+            hungerBar.currentLevel+= InventoryManager.GetComponent<InventoryManagerScript>().shopItems[2, 1];
+        }
+        else if (collision.gameObject.name.Contains("apple"))
+        {
+            hungerBar.currentLevel += InventoryManager.GetComponent<InventoryManagerScript>().shopItems[2, 2];
+        }
+        else
+        {
+            Debug.LogError("Could not increment Hunger Bar, check prefabs");
+        }
+
+        Destroy(collision.gameObject);
     }
 }

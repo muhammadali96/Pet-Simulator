@@ -8,20 +8,23 @@ public class InventoryManagerScript : MonoBehaviour
 {
 
     public int[,] shopItems = new int[6, 6];
-    public float hunger;
+    public List<GameObject> newGameObj;
+    public MoveScript moveScript;
 
+    public float xItemsLowerBound = -2.5f;
+    public float yItemsUpperBound = -0.6f;
 
     void Start()
     {
 
         //ID's
-        shopItems[1, 1] = 1;
-        shopItems[1, 2] = 2;
+        shopItems[1, 1] = 1; //Apple
+        shopItems[1, 2] = 2; //Bread
         shopItems[1, 3] = 3;
         shopItems[1, 4] = 4;
         shopItems[1, 5] = 5;
 
-        //Price
+        //Stats
         shopItems[2, 1] = 10;
         shopItems[2, 2] = 20;
         shopItems[2, 3] = 30;
@@ -41,11 +44,18 @@ public class InventoryManagerScript : MonoBehaviour
     public void Use()
     {
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
+        int ItemID = ButtonRef.GetComponent<InventoryButtonInfo>().ItemID;
 
-        if (shopItems[3, ButtonRef.GetComponent<InventoryButtonInfo>().ItemID] >= 1)
+        if (shopItems[3, ItemID] >= 1)
         {
-            hunger += shopItems[2, ButtonRef.GetComponent<InventoryButtonInfo>().ItemID];
-            shopItems[3, ButtonRef.GetComponent<InventoryButtonInfo>().ItemID]--;
+            //randomly place this gameobject in the map where the pet can travel
+
+            float x = Random.Range(xItemsLowerBound, moveScript.xUpperBound);
+            float y = Random.Range(moveScript.yLowerBound, yItemsUpperBound);
+
+            Instantiate(newGameObj[ItemID-1] , new Vector3(x, y, 0), Quaternion.identity);
+
+            shopItems[3, ItemID]--;
             ButtonRef.GetComponent<InventoryButtonInfo>().QuantityTxt.text = shopItems[3, ButtonRef.GetComponent<InventoryButtonInfo>().ItemID].ToString();
         }
 

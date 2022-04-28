@@ -15,6 +15,12 @@ public class MoveScript : MonoBehaviour
     float horizontalMove = 0f;
     bool facingRight = true;
 
+    public float xLowerBound = -3.3f;
+    public float xUpperBound = 3.2f;
+    public float yLowerBound = -1.5f;
+    public float yUpperBound = 0f;
+
+
     void Start()
     {
         targetPosition = transform.position;
@@ -67,10 +73,6 @@ public class MoveScript : MonoBehaviour
             //replace touch with mouse for testing purposes
             if ( Input.GetMouseButtonDown(0)) //Input.touchCount(0) > 0
             {
-                float xLowerBound = -3.3f;
-                float xUpperBound = 3.2f;
-                float yLowerBound = -1.5f;
-                float yUpperBound = 0f;
 
                 Vector3 touch = Input.mousePosition; //Input.GetTouch
                 Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch); //touch.position
