@@ -10,15 +10,16 @@ public class InventoryManagerScript : MonoBehaviour
     public int[,] shopItems = new int[6, 6];
     public List<GameObject> newGameObj;
     public MoveScript moveScript;
-   
 
+    public float xItemsLowerBound = -2.5f;
+    public float yItemsUpperBound = -0.6f;
 
     void Start()
     {
 
         //ID's
-        shopItems[1, 1] = 1;
-        shopItems[1, 2] = 2;
+        shopItems[1, 1] = 1; //Apple
+        shopItems[1, 2] = 2; //Bread
         shopItems[1, 3] = 3;
         shopItems[1, 4] = 4;
         shopItems[1, 5] = 5;
@@ -49,8 +50,8 @@ public class InventoryManagerScript : MonoBehaviour
         {
             //randomly place this gameobject in the map where the pet can travel
 
-            float x = Random.Range(moveScript.xLowerBound, moveScript.xUpperBound);
-            float y = Random.Range(moveScript.yLowerBound, moveScript.yUpperBound);
+            float x = Random.Range(xItemsLowerBound, moveScript.xUpperBound);
+            float y = Random.Range(moveScript.yLowerBound, yItemsUpperBound);
 
             Instantiate(newGameObj[ItemID-1] , new Vector3(x, y, 0), Quaternion.identity);
 
