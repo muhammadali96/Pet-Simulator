@@ -5,20 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class DetectCollision : MonoBehaviour
 {
+    public HungerFillStatusBar hungerBar;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("collision detected" + collision.gameObject.name);
-        SceneManager.LoadScene("Level2");
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        hungerBar.currentLevel++;
+        Destroy(collision.gameObject);
     }
 }

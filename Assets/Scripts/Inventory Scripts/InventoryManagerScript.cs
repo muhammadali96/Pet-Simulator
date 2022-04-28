@@ -9,6 +9,7 @@ public class InventoryManagerScript : MonoBehaviour
 
     public int[,] shopItems = new int[6, 6];
     public List<GameObject> newGameObj;
+    public MoveScript moveScript;
    
 
 
@@ -22,7 +23,7 @@ public class InventoryManagerScript : MonoBehaviour
         shopItems[1, 4] = 4;
         shopItems[1, 5] = 5;
 
-        //Price
+        //Stats
         shopItems[2, 1] = 10;
         shopItems[2, 2] = 20;
         shopItems[2, 3] = 30;
@@ -46,12 +47,12 @@ public class InventoryManagerScript : MonoBehaviour
 
         if (shopItems[3, ItemID] >= 1)
         {
-            //find the game object associated with this button
-            //instantiate a gameObject with the same image
             //randomly place this gameobject in the map where the pet can travel
 
-            Debug.Log(ItemID);
-            Instantiate(newGameObj[ItemID] , new Vector3(0, 0, 0), Quaternion.identity);
+            float x = Random.Range(moveScript.xLowerBound, moveScript.xUpperBound);
+            float y = Random.Range(moveScript.yLowerBound, moveScript.yUpperBound);
+
+            Instantiate(newGameObj[ItemID-1] , new Vector3(x, y, 0), Quaternion.identity);
 
             shopItems[3, ItemID]--;
             ButtonRef.GetComponent<InventoryButtonInfo>().QuantityTxt.text = shopItems[3, ButtonRef.GetComponent<InventoryButtonInfo>().ItemID].ToString();
