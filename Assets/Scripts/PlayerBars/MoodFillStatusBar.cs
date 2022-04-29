@@ -3,12 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FillStatusBar : MonoBehaviour
+public class MoodFillStatusBar : MonoBehaviour
 {
-    public PlayerBar PlayerBar;
+    //public EnergyBar energyBar;
     public Image fillImage;
     private Slider slider;
+    public float currentLevel;
+    public float maxLevel;
+    public int DelayAmount = 1;
 
+    protected float timer;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        //PlayerData data = SaveSystem.LoadPlayer();
+
+        //currentLevel = data.currentLevel;
+    }
 
     // Start is called before the first frame update
     void Awake()
@@ -16,16 +28,26 @@ public class FillStatusBar : MonoBehaviour
         slider = GetComponent<Slider>();
     }
 
+    //this is saving too many times
     // Update is called once per frame
     void Update()
     {
-        if(PlayerBar.max_Level == 0)
+
+        //SaveSystem.SavePlayer(this);
+        timer += Time.deltaTime;
+
+        if (timer >= DelayAmount)
+        {
+            timer = 0f;
+            currentLevel--;
+        }
+        if (maxLevel == 0)
         {
             Debug.LogError("Max Level not set");
             return;
         }
 
-        float fillValue = PlayerBar.current_Level / PlayerBar.max_Level;
+        float fillValue = currentLevel / maxLevel;
 
         if(fillValue <= slider.maxValue / 3)
         {

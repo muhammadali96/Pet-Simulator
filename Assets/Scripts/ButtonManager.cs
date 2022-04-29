@@ -31,6 +31,10 @@ public class ButtonManager : MonoBehaviour
     {
         SceneManager.LoadScene("Game");
     }
+    public void CloseUpScene()
+    {
+        SceneManager.LoadScene("Close Up Scene");
+    }
 
     public void Shop()
     {
@@ -41,6 +45,9 @@ public class ButtonManager : MonoBehaviour
     {
         SaveSystem.ClearPlayer();
     }
-
+    public void SaveData()
+    {
+        SaveSystem.SaveGameState();
+    }
 
 }

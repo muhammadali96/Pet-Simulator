@@ -435,7 +435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3034304128852220549, guid: 6a2e44e682f3ea5469046c0ccfa27945, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseUpBack
+      value: CloseUpScene
       objectReference: {fileID: 0}
     - target: {fileID: 3034304128852220549, guid: 6a2e44e682f3ea5469046c0ccfa27945, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
