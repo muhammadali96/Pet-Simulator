@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7338232980373750054}
   - component: {fileID: -6170761599338383696}
   m_Layer: 0
-  m_Name: bread
+  m_Name: cake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 8939574157517028776}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.24, y: -0.61, z: 0}
-  m_LocalScale: {x: 0.021145478, y: 0.021145478, z: 0.021145478}
+  m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: e0039399ded8d434db5c2487465a5d2a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a5feb0278ba96c84c9b7fbd216cefe7e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,7 +101,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 19.38, y: 20}
+    oldSize: {x: 6.14, y: 4.81}
     newSize: {x: 19.38, y: 20}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
