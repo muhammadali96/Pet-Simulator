@@ -10,11 +10,11 @@ public class InventoryButtonInfo : MonoBehaviour
     public Text StatsTxt;
     public Text QuantityTxt;
     public GameObject InventoryManager;
-    //can you share or refer ro the same GameObjects across scenes?
 
     void Update()
     {
-        StatsTxt.text = "+" + InventoryManager.GetComponent<InventoryManagerScript>().shopItems[2, ItemID].ToString();
-        QuantityTxt.text = InventoryManager.GetComponent<InventoryManagerScript>().shopItems[3, ItemID].ToString();
+        Debug.Log(GameData.shopItems[2, 1]);
+        StatsTxt.text = "+" + GameData.shopItems[2, ItemID].ToString();
+        QuantityTxt.text = GameData.shopItems[3, ItemID].ToString();
     }
 }

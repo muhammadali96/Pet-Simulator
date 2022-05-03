@@ -13,7 +13,7 @@ public class ButtonInfo : MonoBehaviour
 
     void Update()
     {
-        PirceTxt.text = "Price: $" + ShopManager.GetComponent<ShopManagerScript>().shopItems[2, ItemID].ToString();
-        QuantityTxt.text = ShopManager.GetComponent<ShopManagerScript>().shopItems[3, ItemID].ToString();
+        PirceTxt.text = "Price: $" + GameData.shopItems[2, ItemID].ToString();
+        QuantityTxt.text = GameData.shopItems[3, ItemID].ToString();
     }
 }
