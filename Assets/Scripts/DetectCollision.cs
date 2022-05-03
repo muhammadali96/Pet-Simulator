@@ -13,23 +13,23 @@ public class DetectCollision : MonoBehaviour
 
         if (collision.gameObject.name.Contains("cake")) 
         {
-            hungerBar.currentLevel+= InventoryManager.GetComponent<InventoryManagerScript>().shopItems[2, 1];
+            hungerBar.currentLevel+= GameData.shopItems[2, 1];
         }
         else if (collision.gameObject.name.Contains("meat"))
         {
-            hungerBar.currentLevel += InventoryManager.GetComponent<InventoryManagerScript>().shopItems[2, 2];
+            hungerBar.currentLevel += GameData.shopItems[2, 2];
         }
         else if (collision.gameObject.name.Contains("watermelon"))
         {
-            hungerBar.currentLevel += InventoryManager.GetComponent<InventoryManagerScript>().shopItems[2, 3];
+            hungerBar.currentLevel += GameData.shopItems[2, 3];
         }
         else if (collision.gameObject.name.Contains("burger"))
         {
-            hungerBar.currentLevel += InventoryManager.GetComponent<InventoryManagerScript>().shopItems[2, 4];
+            hungerBar.currentLevel += GameData.shopItems[2, 4];
         }
         else if (collision.gameObject.name.Contains("apple"))
         {
-            hungerBar.currentLevel += InventoryManager.GetComponent<InventoryManagerScript>().shopItems[2, 5];
+            hungerBar.currentLevel += GameData.shopItems[2, 5];
         }
         else
         {
