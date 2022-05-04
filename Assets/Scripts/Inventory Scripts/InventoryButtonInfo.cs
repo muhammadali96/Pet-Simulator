@@ -13,7 +13,7 @@ public class InventoryButtonInfo : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(GameData.shopItems[2, 1]);
+     
         StatsTxt.text = "+" + GameData.shopItems[2, ItemID].ToString();
         QuantityTxt.text = GameData.shopItems[3, ItemID].ToString();
     }
