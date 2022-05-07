@@ -286,7 +286,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00036802914, y: -0.00052264833}
+  m_AnchoredPosition: {x: 0.000048844402, y: -0.00052264833}
   m_SizeDelta: {x: -2.1565669, y: 365.1}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &110518684
@@ -907,7 +907,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 921329790}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99887484
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -964,7 +964,7 @@ GameObject:
   - component: {fileID: 427878351}
   - component: {fileID: 427878350}
   m_Layer: 5
-  m_Name: Item2
+  m_Name: Item7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1060,7 +1060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0098172128bcd1c439ee79c75d9b1708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemID: 2
+  ItemID: 7
   PirceTxt: {fileID: 1325618611}
   QuantityTxt: {fileID: 908693949}
   ShopManager: {fileID: 49028187}
@@ -2265,7 +2265,7 @@ GameObject:
   - component: {fileID: 854809612}
   - component: {fileID: 854809611}
   m_Layer: 5
-  m_Name: Item1
+  m_Name: Item6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2361,7 +2361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0098172128bcd1c439ee79c75d9b1708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemID: 1
+  ItemID: 6
   PirceTxt: {fileID: 542127487}
   QuantityTxt: {fileID: 758647258}
   ShopManager: {fileID: 49028187}
@@ -2417,7 +2417,7 @@ GameObject:
   - component: {fileID: 871332729}
   - component: {fileID: 871332728}
   m_Layer: 5
-  m_Name: Item3
+  m_Name: Item8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2513,7 +2513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0098172128bcd1c439ee79c75d9b1708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemID: 3
+  ItemID: 8
   PirceTxt: {fileID: 407336979}
   QuantityTxt: {fileID: 1154030455}
   ShopManager: {fileID: 49028187}
@@ -3701,7 +3701,7 @@ GameObject:
   - component: {fileID: 1315920502}
   - component: {fileID: 1315920501}
   m_Layer: 5
-  m_Name: Item4
+  m_Name: Item9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3797,7 +3797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0098172128bcd1c439ee79c75d9b1708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemID: 4
+  ItemID: 9
   PirceTxt: {fileID: 890768214}
   QuantityTxt: {fileID: 1035823450}
   ShopManager: {fileID: 49028187}
@@ -4796,7 +4796,7 @@ GameObject:
   - component: {fileID: 1815168191}
   - component: {fileID: 1815168190}
   m_Layer: 5
-  m_Name: Item5
+  m_Name: Item10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4892,7 +4892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0098172128bcd1c439ee79c75d9b1708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemID: 5
+  ItemID: 10
   PirceTxt: {fileID: 1588987032}
   QuantityTxt: {fileID: 1003913164}
   ShopManager: {fileID: 49028187}
