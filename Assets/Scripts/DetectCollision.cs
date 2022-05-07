@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class DetectCollision : MonoBehaviour
 {
     public HungerFillStatusBar hungerBar;
+    public MoodFillStatusBar moodBar;
     public GameObject InventoryManager;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -31,9 +32,29 @@ public class DetectCollision : MonoBehaviour
         {
             hungerBar.currentLevel += GameData.shopItems[2, 5];
         }
+        else if (collision.gameObject.name.Contains("ball"))
+        {
+            moodBar.currentLevel += GameData.shopItems[2, 6];
+        }
+        else if (collision.gameObject.name.Contains("teddy"))
+        {
+            moodBar.currentLevel += GameData.shopItems[2, 7];
+        }
+        else if (collision.gameObject.name.Contains("duck"))
+        {
+            moodBar.currentLevel += GameData.shopItems[2, 8];
+        }
+        else if (collision.gameObject.name.Contains("wool"))
+        {
+            moodBar.currentLevel += GameData.shopItems[2, 9];
+        }
+        else if (collision.gameObject.name.Contains("hand"))
+        {
+            moodBar.currentLevel += GameData.shopItems[2, 6];
+        }
         else
         {
-            Debug.LogError("Could not increment Hunger Bar, check prefabs");
+            Debug.LogError("Could not increment Bars, check Detect collision mechanics");
         }
 
         Destroy(collision.gameObject);

@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class ShopManagerScript : MonoBehaviour
 {
 
-    //public int[,] shopItems = new int[6,6];
     public float coins;
     public Text CoinsTXT;
 
@@ -18,26 +17,6 @@ public class ShopManagerScript : MonoBehaviour
         CoinsTXT.text = "Coins:" + coins.ToString();
 
 
-        ////ID's
-        //GameData.shopItems[1, 1] = 1;
-        //GameData.shopItems[1, 2] = 2;
-        //GameData.shopItems[1, 3] = 3;
-        //GameData.shopItems[1, 4] = 4;
-        //GameData.shopItems[1, 5] = 5;
-
-        ////Price
-        //GameData.shopItems[2, 1] = 10;
-        //GameData.shopItems[2, 2] = 20;
-        //GameData.shopItems[2, 3] = 30;
-        //GameData.shopItems[2, 4] = 40;
-        //GameData.shopItems[2, 5] = 50;
-
-        ////Quantity
-        //GameData.shopItems[3, 1] = 0;
-        //GameData.shopItems[3, 2] = 0;
-        //GameData.shopItems[3, 3] = 0;
-        //GameData.shopItems[3, 4] = 0;
-        //GameData.shopItems[3, 5] = 0;
 
     }
 
