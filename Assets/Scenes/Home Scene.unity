@@ -1377,7 +1377,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.6901408
+  orthographic size: 1.6878049
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3738,8 +3738,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fillImage: {fileID: 1225149011}
-  currentLevel: 5
-  maxLevel: 10
+  currentLevel: 100
+  maxLevel: 100
   DelayAmount: 5
 --- !u!1 &1940924356
 GameObject:
@@ -4139,8 +4139,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fillImage: {fileID: 1495677258}
-  currentLevel: 10
-  maxLevel: 10
+  currentLevel: 50
+  maxLevel: 100
   Delay: 5
 --- !u!1 &2105009967
 GameObject:
