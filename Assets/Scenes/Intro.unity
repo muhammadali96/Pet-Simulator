@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 95.9, y: -3.5}
-  m_SizeDelta: {x: 1041.8, y: 279.2}
+  m_AnchoredPosition: {x: 102, y: 186}
+  m_SizeDelta: {x: 631.7415, y: 251.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &123953045
 MonoBehaviour:
@@ -174,10 +174,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameObjectWithImage: {fileID: 605566343}
-  ImageYouWant: {fileID: 21300000, guid: 3bdb31a88f3ab624799f56b4c0abc65e, type: 3}
-  input: this is sans again
+  ImageYouWant: {fileID: 21300000, guid: 83dd92f1a5136574b99f55d3a6c51b2b, type: 3}
+  input: 'We are expecting a new pet arrival! '
   textColor: {r: 1, g: 1, b: 1, a: 1}
-  textFont: {fileID: 12800000, guid: aff46af37ee875c4089b49805255c0c3, type: 3}
+  textFont: {fileID: 12800000, guid: f9496df5beef0134e90acc5cb2b751d1, type: 3}
   delay: 0.1
   delayBetweenLines: 0
   sound: {fileID: 8300000, guid: 0170ac8a992de094cb052e42551df1dd, type: 3}
@@ -208,7 +208,7 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 104
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -381,6 +381,106 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605566343}
   m_CullTransparentMesh: 0
+--- !u!1 &634214276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 634214277}
+  - component: {fileID: 634214280}
+  - component: {fileID: 634214279}
+  - component: {fileID: 634214278}
+  m_Layer: 5
+  m_Name: DialogueLine6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &634214277
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634214276}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 889273943}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 110, y: 153}
+  m_SizeDelta: {x: 847.8817, y: 349.3694}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &634214278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634214276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6bc0f867d91da488ed48aa8e6f4a57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameObjectWithImage: {fileID: 605566343}
+  ImageYouWant: {fileID: 21300000, guid: 7762c67dd288d9441a1fadd005dbb80b, type: 3}
+  input: " Relax and and enjoy their company - you\u2019ll do great! "
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  textFont: {fileID: 12800000, guid: f9496df5beef0134e90acc5cb2b751d1, type: 3}
+  delay: 0.05
+  delayBetweenLines: 0
+  sound: {fileID: 8300000, guid: 9f8d62239224bb2409a7927b6eef24b2, type: 3}
+--- !u!114 &634214279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634214276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: f9496df5beef0134e90acc5cb2b751d1, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 104
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &634214280
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634214276}
+  m_CullTransparentMesh: 0
 --- !u!1 &634229587
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,7 +557,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -517,8 +617,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 95.9, y: -3.5}
-  m_SizeDelta: {x: 1041.8, y: 279.2}
+  m_AnchoredPosition: {x: 114, y: 101}
+  m_SizeDelta: {x: 656.2336, y: 349.3694}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &791024925
 MonoBehaviour:
@@ -533,10 +633,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameObjectWithImage: {fileID: 605566343}
-  ImageYouWant: {fileID: 21300000, guid: 40b3c584f743cef4e82b796d6e78b7b2, type: 3}
-  input: end of dialogue
-  textColor: {r: 1, g: 0.6012078, b: 0, a: 1}
-  textFont: {fileID: 12800000, guid: 584e726639c1fc94b8b258e8bf1e1e90, type: 3}
+  ImageYouWant: {fileID: 21300000, guid: d0db06a48bf611c4ca9ab15526534339, type: 3}
+  input: 'Nurture and care is what we do best here. '
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  textFont: {fileID: 12800000, guid: f9496df5beef0134e90acc5cb2b751d1, type: 3}
   delay: 0.05
   delayBetweenLines: 0
   sound: {fileID: 8300000, guid: 9f8d62239224bb2409a7927b6eef24b2, type: 3}
@@ -567,7 +667,7 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 104
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -617,13 +717,15 @@ RectTransform:
   - {fileID: 1700574571}
   - {fileID: 123953044}
   - {fileID: 791024924}
+  - {fileID: 1515504414}
+  - {fileID: 634214277}
   m_Father: {fileID: 634229591}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -457.34714, y: 422.59583}
-  m_SizeDelta: {x: 803.9043, y: 575.1083}
+  m_AnchoredPosition: {x: -464, y: 422.59583}
+  m_SizeDelta: {x: 734.843, y: 575.1083}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &889273944
 MonoBehaviour:
@@ -751,6 +853,106 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaDirect: 0.5
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
+--- !u!1 &1515504413
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1515504414}
+  - component: {fileID: 1515504417}
+  - component: {fileID: 1515504416}
+  - component: {fileID: 1515504415}
+  m_Layer: 5
+  m_Name: DialogueLine5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1515504414
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515504413}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 889273943}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 112, y: 112.8723}
+  m_SizeDelta: {x: 773.677, y: 349.3694}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1515504415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515504413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6bc0f867d91da488ed48aa8e6f4a57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameObjectWithImage: {fileID: 605566343}
+  ImageYouWant: {fileID: 21300000, guid: d0db06a48bf611c4ca9ab15526534339, type: 3}
+  input: Make sure your pet is well  fed, rested and happy.
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  textFont: {fileID: 12800000, guid: f9496df5beef0134e90acc5cb2b751d1, type: 3}
+  delay: 0.05
+  delayBetweenLines: 0
+  sound: {fileID: 8300000, guid: 9f8d62239224bb2409a7927b6eef24b2, type: 3}
+--- !u!114 &1515504416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515504413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: f9496df5beef0134e90acc5cb2b751d1, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 104
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1515504417
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515504413}
+  m_CullTransparentMesh: 0
 --- !u!1 &1655989738
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,8 +1054,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 95.9, y: -3.5}
-  m_SizeDelta: {x: 1041.8, y: 279.2}
+  m_AnchoredPosition: {x: 120.59779, y: 184.27}
+  m_SizeDelta: {x: 660.8895, y: 267.5647}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1700574572
 MonoBehaviour:
@@ -868,10 +1070,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameObjectWithImage: {fileID: 605566343}
-  ImageYouWant: {fileID: 21300000, guid: 699af482910cd9940bb35bb7650b9c78, type: 3}
-  input: I am not sans
-  textColor: {r: 1, g: 0.6012078, b: 0, a: 1}
-  textFont: {fileID: 12800000, guid: 584e726639c1fc94b8b258e8bf1e1e90, type: 3}
+  ImageYouWant: {fileID: 21300000, guid: 54ddca20fe7fc3547a76e4f8ec7bbef4, type: 3}
+  input: Thanks so much for coming to help me run the shelter.
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  textFont: {fileID: 12800000, guid: f9496df5beef0134e90acc5cb2b751d1, type: 3}
   delay: 0.05
   delayBetweenLines: 0
   sound: {fileID: 8300000, guid: 9f8d62239224bb2409a7927b6eef24b2, type: 3}
@@ -902,7 +1104,7 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 104
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -952,8 +1154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.294, y: 169.02}
-  m_SizeDelta: {x: 884.5879, y: 237.07}
+  m_AnchoredPosition: {x: -0.00001335144, y: 169.02}
+  m_SizeDelta: {x: 745.198, y: 237.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1989974056
 MonoBehaviour:
@@ -974,7 +1176,7 @@ MonoBehaviour:
   textFont: {fileID: 12800000, guid: f9496df5beef0134e90acc5cb2b751d1, type: 3}
   delay: 0.1
   delayBetweenLines: 2
-  sound: {fileID: 8300000, guid: b68744890c03932478bd1473a9d1488e, type: 3}
+  sound: {fileID: 8300000, guid: 75dcb24768de20348b426ab6eec1ae77, type: 3}
 --- !u!114 &1989974057
 MonoBehaviour:
   m_ObjectHideFlags: 0
