@@ -173,6 +173,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a6bc0f867d91da488ed48aa8e6f4a57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameObjectWithImage: {fileID: 605566343}
+  ImageYouWant: {fileID: 21300000, guid: 3bdb31a88f3ab624799f56b4c0abc65e, type: 3}
   input: this is sans again
   textColor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: aff46af37ee875c4089b49805255c0c3, type: 3}
@@ -530,6 +532,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a6bc0f867d91da488ed48aa8e6f4a57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameObjectWithImage: {fileID: 605566343}
+  ImageYouWant: {fileID: 21300000, guid: 40b3c584f743cef4e82b796d6e78b7b2, type: 3}
   input: end of dialogue
   textColor: {r: 1, g: 0.6012078, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: 584e726639c1fc94b8b258e8bf1e1e90, type: 3}
@@ -863,6 +867,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a6bc0f867d91da488ed48aa8e6f4a57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameObjectWithImage: {fileID: 605566343}
+  ImageYouWant: {fileID: 21300000, guid: 699af482910cd9940bb35bb7650b9c78, type: 3}
   input: I am not sans
   textColor: {r: 1, g: 0.6012078, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: 584e726639c1fc94b8b258e8bf1e1e90, type: 3}
@@ -961,6 +967,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a6bc0f867d91da488ed48aa8e6f4a57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameObjectWithImage: {fileID: 605566343}
+  ImageYouWant: {fileID: 21300000, guid: e22699c5f4cf9124582ad770bf2fbd51, type: 3}
   input: Hello! Welcome to Cogshel.
   textColor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: f9496df5beef0134e90acc5cb2b751d1, type: 3}

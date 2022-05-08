@@ -5,7 +5,10 @@ using UnityEngine.UI;
 namespace DialogueSystem
 {
     public class DialogueLine : DialogueBaseClass
+
     {
+        public GameObject GameObjectWithImage;
+        public Sprite ImageYouWant;
         private Text textHolder;
 
         [Header ("Text Options")]
@@ -33,6 +36,7 @@ namespace DialogueSystem
         private void Start()
         {
             StartCoroutine(WriteText(input, textHolder, textColor, textFont, delay, sound, delayBetweenLines));
+            GameObjectWithImage.GetComponent<Image>().sprite = ImageYouWant;
         }
     }
 }
