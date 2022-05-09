@@ -4981,6 +4981,7 @@ MonoBehaviour:
   currentLevel: 100
   maxLevel: 100
   DelayAmount: 5
+  playerAnim: {fileID: 1293332781}
 --- !u!1 &1940924356
 GameObject:
   m_ObjectHideFlags: 0

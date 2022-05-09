@@ -11,6 +11,7 @@ public class MoodFillStatusBar : MonoBehaviour
     public float currentLevel;
     public float maxLevel;
     public int DelayAmount = 1;
+    public GameObject playerAnim;
 
     protected float timer;
 
@@ -52,14 +53,17 @@ public class MoodFillStatusBar : MonoBehaviour
         if(fillValue <= slider.maxValue / 3)
         {
             fillImage.color = Color.red;
+            playerAnim.GetComponent<Animator>().SetBool("Sad", true);
         }
         else if(fillValue >= 2*slider.maxValue / 3 )
         {
             fillImage.color = new Color(0f, 0.2358491f, 0.02620547f);
+            playerAnim.GetComponent<Animator>().SetBool("Sad", false);
         }
         else
         {
             fillImage.color = Color.yellow;
+            playerAnim.GetComponent<Animator>().SetBool("Sad", false);
         }
 
 
