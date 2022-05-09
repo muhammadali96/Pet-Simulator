@@ -8,7 +8,7 @@ namespace DialogueSystem
     {
         public bool finished { get; private set; }
 
-        protected IEnumerator WriteText(string input, Text textHolder, Color textColor, Font textFont, float delay, AudioClip sound, float delayBetweenLines)
+        protected IEnumerator WriteText(bool end, string input, Text textHolder, Color textColor, Font textFont, float delay, AudioClip sound, float delayBetweenLines)
         {
             textHolder.color = textColor;
             textHolder.font = textFont;
@@ -21,8 +21,12 @@ namespace DialogueSystem
             }
 
             //yield return new WaitForSeconds(delayBetweenLines);
-            yield return new WaitUntil(() => Input.GetMouseButton(0));
-            finished = true;
+            if (end == false)
+            {
+                yield return new WaitUntil(() => Input.GetMouseButton(0));
+                finished = true;
+            }
+            
         }
     }
 }

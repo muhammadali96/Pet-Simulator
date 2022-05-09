@@ -11,7 +11,10 @@ namespace DialogueSystem
         public Sprite ImageYouWant;
         private Text textHolder;
 
-        [Header ("Text Options")]
+        [SerializeField] private bool end;
+
+
+       [Header ("Text Options")]
         [SerializeField] private string input;
         [SerializeField] private Color textColor;
         [SerializeField] private Font textFont;
@@ -35,7 +38,7 @@ namespace DialogueSystem
 
         private void Start()
         {
-            StartCoroutine(WriteText(input, textHolder, textColor, textFont, delay, sound, delayBetweenLines));
+            StartCoroutine(WriteText(end, input, textHolder, textColor, textFont, delay, sound, delayBetweenLines));
             GameObjectWithImage.GetComponent<Image>().sprite = ImageYouWant;
         }
     }
