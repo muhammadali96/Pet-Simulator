@@ -7,10 +7,10 @@ using UnityEngine.UI;
 public class MoveScript : MonoBehaviour
 {
     public Animator animator; 
-    public Sprite selectedSprite;
-    public Sprite deselectedSprite;
+    //public Sprite selectedSprite;
+    //public Sprite deselectedSprite;
     public Text scoreText;
-    private bool isPetSelected = false;
+    //private bool isPetSelected = false;
     private Vector3 targetPosition;
     float horizontalMove = 0f;
     bool facingRight = true;
@@ -25,48 +25,15 @@ public class MoveScript : MonoBehaviour
     {
         targetPosition = transform.position;
     }
-    private void OnMouseDown()
-    {
-        GameObject[] allPets = GameObject.FindGameObjectsWithTag("Pet");
-
-        foreach (GameObject pet in allPets)
-        {
-            pet.SendMessage("DeselectForMovement");
-
-        }
-
-        isPetSelected = true;
-        ChangeToSelectedSprite();
+    
 
 
-
-    }
-
-    void ChangeToSelectedSprite()
-    {
-        SpriteRenderer mySpriteRenderer = GetComponent<SpriteRenderer>();
-        mySpriteRenderer.sprite = selectedSprite;
-    }
-
-    void ChangeToDeselectedSprite()
-    {
-        SpriteRenderer mySpriteRenderer = GetComponent<SpriteRenderer>();
-        mySpriteRenderer.sprite = deselectedSprite;
-    }
-
-    void DeselectForMovement()
-    {
-        isPetSelected = false;
-        ChangeToDeselectedSprite();
-        
-     }
 
 
     // Update is called once per frame
     void Update()
     {
-        if (isPetSelected)
-        {
+        
 
             //This gets the target position if screen has been pressed
 
@@ -95,7 +62,7 @@ public class MoveScript : MonoBehaviour
                 
                 targetPosition = constrainedTouchPosition;
 
-            }
+            //}
 
         }
         
