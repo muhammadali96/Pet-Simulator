@@ -19,6 +19,7 @@ public class MoveScript : MonoBehaviour
     public float xUpperBound = 3.2f;
     public float yLowerBound = -1.5f;
     public float yUpperBound = 0f;
+    public float speed;
 
 
     void Start()
@@ -73,9 +74,9 @@ public class MoveScript : MonoBehaviour
             //A constant stepVector is defined so the pet moves at a constant speed
             //until it is close to it's destination at which point the stepVector becomes 0
             
-            Vector3 stepVector = 0.005f*Vector3.Normalize(targetPosition - transform.position);
+            Vector3 stepVector = speed*Vector3.Normalize(targetPosition - transform.position);
 
-            if((targetPosition - transform.position).magnitude < 0.005f)
+            if((targetPosition - transform.position).magnitude < speed)
             {
                 stepVector = new Vector3(0, 0, 0);
             }
