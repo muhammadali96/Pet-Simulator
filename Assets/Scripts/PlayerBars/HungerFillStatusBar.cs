@@ -10,6 +10,8 @@ public class HungerFillStatusBar : MonoBehaviour
     public float currentLevel;
     public float maxLevel;
     public int Delay;
+    SadnessController sadnessController;
+
 
     protected float timer;
 
@@ -19,6 +21,7 @@ public class HungerFillStatusBar : MonoBehaviour
         //PlayerData data = SaveSystem.LoadPlayer();
 
         //currentLevel = data.currentLevel;
+        sadnessController = GameObject.FindGameObjectWithTag("Pet").GetComponent<SadnessController>();
     }
 
     // Start is called before the first frame update
@@ -51,14 +54,17 @@ public class HungerFillStatusBar : MonoBehaviour
         if (fillValue <= slider.maxValue / 3)
         {
             fillImage.color = Color.red;
+            sadnessController.setHungry(true);
         }
         else if (fillValue >= 2 * slider.maxValue / 3)
         {
             fillImage.color = new Color(0f, 0.2358491f, 0.02620547f);
+            sadnessController.setHungry(false);
         }
         else
         {
             fillImage.color = Color.yellow;
+            sadnessController.setHungry(false);
         }
 
 
