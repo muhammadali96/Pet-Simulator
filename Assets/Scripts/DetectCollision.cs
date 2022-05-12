@@ -9,6 +9,7 @@ public class DetectCollision : MonoBehaviour
     public MoodFillStatusBar moodBar;
     public GameObject InventoryManager;
 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
@@ -56,6 +57,7 @@ public class DetectCollision : MonoBehaviour
         {
             Debug.LogError("Could not increment Bars, check Detect collision mechanics");
         }
+        this.GetComponent<Animator>().SetTrigger("Eating");
 
         Destroy(collision.gameObject);
     }

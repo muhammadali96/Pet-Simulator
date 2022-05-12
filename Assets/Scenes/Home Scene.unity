@@ -2951,6 +2951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energyBar: {fileID: 2044558142}
+  objectToAnimate: {fileID: 1293332781}
 --- !u!1 &878313148
 GameObject:
   m_ObjectHideFlags: 0
@@ -3598,7 +3599,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 30, y: 20}
-    newSize: {x: 30.007326, y: 20}
+    newSize: {x: 30, y: 20}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5969,6 +5970,10 @@ PrefabInstance:
     - target: {fileID: 7039381150535500262, guid: 82aa8c2712a1f4284ab335fc773eefc0, type: 3}
       propertyPath: m_FlipY
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7039381150535500262, guid: 82aa8c2712a1f4284ab335fc773eefc0, type: 3}
+      propertyPath: m_Size.x
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7039381150535500262, guid: 82aa8c2712a1f4284ab335fc773eefc0, type: 3}
       propertyPath: m_Sprite
