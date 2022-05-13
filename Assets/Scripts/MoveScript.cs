@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 
 public class MoveScript : MonoBehaviour
@@ -41,6 +42,10 @@ public class MoveScript : MonoBehaviour
             //replace touch with mouse for testing purposes
             if ( Input.GetMouseButtonDown(0)) //Input.touchCount(0) > 0
             {
+            if (EventSystem.current.IsPointerOverGameObject())
+            {
+                return;
+            }
 
                 Vector3 touch = Input.mousePosition; //Input.GetTouch
                 Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch); //touch.position
