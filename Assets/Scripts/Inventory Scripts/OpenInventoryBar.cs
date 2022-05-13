@@ -6,6 +6,7 @@ public class OpenInventoryBar : MonoBehaviour
 {
 
     public GameObject InventoryBar;
+    public GameObject InactiveInventoryBar;
 
     public void Open()
     {
@@ -13,6 +14,7 @@ public class OpenInventoryBar : MonoBehaviour
         {
             bool isActive = InventoryBar.activeSelf;
             InventoryBar.SetActive(!isActive);
+            InactiveInventoryBar.SetActive(false);
         }
     }
    

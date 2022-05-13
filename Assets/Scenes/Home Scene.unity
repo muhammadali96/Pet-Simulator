@@ -497,7 +497,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 104, y: -89.84}
+  m_AnchoredPosition: {x: 104, y: -89.84009}
   m_SizeDelta: {x: 180.92, y: 179.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &216957617
@@ -2582,6 +2582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InventoryBar: {fileID: 326683498}
+  InactiveInventoryBar: {fileID: 415394727}
 --- !u!1 &660400336
 GameObject:
   m_ObjectHideFlags: 0
@@ -4056,6 +4057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InventoryBar: {fileID: 415394727}
+  InactiveInventoryBar: {fileID: 326683498}
 --- !u!1 &1445566224
 GameObject:
   m_ObjectHideFlags: 0
