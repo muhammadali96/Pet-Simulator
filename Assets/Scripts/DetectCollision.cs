@@ -63,10 +63,7 @@ public class DetectCollision : MonoBehaviour
             moodBar.currentLevel += GameData.shopItems[2, 6];
             this.GetComponent<Animator>().SetTrigger("Playing");
         }
-        else
-        {
-            Debug.LogError("Could not increment Bars, check Detect collision mechanics");
-        }
+        
         
 
         Destroy(collision.gameObject);
