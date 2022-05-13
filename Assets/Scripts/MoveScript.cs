@@ -52,6 +52,7 @@ public class MoveScript : MonoBehaviour
 
                 float x = Mathf.Clamp(touchPosition.x, xLowerBound, xUpperBound);
                 float y = Mathf.Clamp(touchPosition.y, yLowerBound, yUpperBound);
+        
                 //normalize step vector
                 //when we're close to final position we stop
 
