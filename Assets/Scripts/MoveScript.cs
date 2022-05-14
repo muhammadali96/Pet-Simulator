@@ -62,9 +62,6 @@ public class MoveScript : MonoBehaviour
                     return;
                 }
 
-               
-
-
                 Vector3 constrainedTouchPosition = new Vector3(x, y, 0);
                 
                 targetPosition = constrainedTouchPosition;
@@ -72,9 +69,14 @@ public class MoveScript : MonoBehaviour
             //}
 
         }
-        
 
-        if(targetPosition!=null)
+        if(animator.GetBool("Eating") == true | animator.GetBool("Sleeping")| animator.GetBool("Playing"))
+        {
+            //stop movement if doing activity
+            targetPosition = transform.position;
+        }
+
+        if (targetPosition!=null)
         {
 
             //A constant stepVector is defined so the pet moves at a constant speed
