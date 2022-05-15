@@ -913,6 +913,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 193498, guid: 6a2e44e682f3ea5469046c0ccfa27945, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 11402784, guid: 6a2e44e682f3ea5469046c0ccfa27945, type: 3}
       propertyPath: coinTxt
       value: 
@@ -1506,7 +1510,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1462124462
 RectTransform:
   m_ObjectHideFlags: 0
