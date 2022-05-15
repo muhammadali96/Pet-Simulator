@@ -185,7 +185,7 @@ Camera:
   far clip plane: 100
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -895,7 +895,7 @@ RectTransform:
   - {fileID: 338707340}
   - {fileID: 1462124462}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -991,7 +991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22469296, guid: 6a2e44e682f3ea5469046c0ccfa27945, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 22469296, guid: 6a2e44e682f3ea5469046c0ccfa27945, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1096,6 +1096,10 @@ PrefabInstance:
     - target: {fileID: 114000012200145376, guid: 6a2e44e682f3ea5469046c0ccfa27945, type: 3}
       propertyPath: m_Color.a
       value: 0.46666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012414310656, guid: 6a2e44e682f3ea5469046c0ccfa27945, type: 3}
+      propertyPath: m_Text
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114000012414310656, guid: 6a2e44e682f3ea5469046c0ccfa27945, type: 3}
       propertyPath: m_FontData.m_Font
@@ -1286,9 +1290,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 124934, guid: eb9c3aa0fa5cc314ab86ca0bcc68ad01, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 465410, guid: eb9c3aa0fa5cc314ab86ca0bcc68ad01, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 465410, guid: eb9c3aa0fa5cc314ab86ca0bcc68ad01, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1479,7 +1487,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1462124461
 GameObject:
@@ -1998,8 +2006,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: dca7a45bef5bffa4395181b03e04d081, type: 3}
   - {fileID: 21300000, guid: 6e84ec6047673d440aa377e4980bfea8, type: 3}
   tile: {fileID: 1000010131827792, guid: 6417c2a8214b7ab45b35ac5e9e62c2cb, type: 3}
-  xSize: 12
-  ySize: 12
+  xSize: 7
+  ySize: 7
 --- !u!4 &1958837308
 Transform:
   m_ObjectHideFlags: 0
@@ -2008,7 +2016,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958837306}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4, y: -4.2, z: 0}
+  m_LocalPosition: {x: 0, y: -2.2, z: 0}
   m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children: []
   m_Father: {fileID: 0}
