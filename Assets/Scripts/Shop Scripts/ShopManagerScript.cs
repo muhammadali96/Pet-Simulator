@@ -7,16 +7,11 @@ using UnityEngine.UI;
 public class ShopManagerScript : MonoBehaviour
 {
 
-    public float coins;
     public Text CoinsTXT;
-
 
     void Start()
     {
-      
-        CoinsTXT.text = "Coins:" + coins.ToString();
-
-
+        CoinsTXT.text = "Coins:" + GameData.coins.ToString();
 
     }
 
@@ -25,11 +20,11 @@ public class ShopManagerScript : MonoBehaviour
     {
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
 
-        if (coins >= GameData.shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID])
+        if (GameData.coins >= GameData.shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID])
         {
-            coins -= GameData.shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID];
+            GameData.coins -= GameData.shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID];
             GameData.shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID]++;
-            CoinsTXT.text = "Coins:" + coins.ToString();
+            CoinsTXT.text = "Coins:" + GameData.coins.ToString();
             ButtonRef.GetComponent<ButtonInfo>().QuantityTxt.text = GameData.shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID].ToString();
 
         }
