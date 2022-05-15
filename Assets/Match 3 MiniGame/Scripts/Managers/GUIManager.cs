@@ -33,6 +33,7 @@ public class GUIManager : MonoBehaviour {
 
 	public Text scoreTxt;
 	public Text moveCounterTxt;
+	public Text coinTxt;
 
 	private int score, moveCounter;
 
@@ -65,6 +66,8 @@ public class GUIManager : MonoBehaviour {
 		set {
 			score = value;
 			scoreTxt.text = score.ToString();
+			double coinsEarned = 0.1 * (int)(System.Math.Ceiling(score / 10.0d) * 10);
+			coinTxt.text = "Congrats, you earned " + coinsEarned + " coins!";
 		}
 	}
 
