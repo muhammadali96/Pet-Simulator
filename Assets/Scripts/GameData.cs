@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class GameData : MonoBehaviour
 {
     //Stores IDs, price&mana, quantity within array

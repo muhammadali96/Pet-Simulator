@@ -49,5 +49,8 @@ public class ButtonManager : MonoBehaviour
     {
         SaveSystem.SaveGameState();
     }
-
+    public void LoadPetArrival()
+    {
+        SceneManager.LoadScene("Pet Arrival");
+    }
 }
