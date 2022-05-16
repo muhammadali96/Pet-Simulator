@@ -8,6 +8,7 @@ public class ShopManagerScript : MonoBehaviour
 {
 
     public Text CoinsTXT;
+    AudioSource audioData;
 
     void Start()
     {
@@ -22,6 +23,8 @@ public class ShopManagerScript : MonoBehaviour
 
         if (GameData.coins >= GameData.shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID])
         {
+            audioData = GetComponent<AudioSource>();
+            audioData.Play(0);
             GameData.coins -= GameData.shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID];
             GameData.shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID]++;
             CoinsTXT.text = "Coins:" + GameData.coins.ToString();
