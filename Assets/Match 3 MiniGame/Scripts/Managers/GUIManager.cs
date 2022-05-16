@@ -33,12 +33,13 @@ public class GUIManager : MonoBehaviour {
 
 	public Text scoreTxt;
 	public Text moveCounterTxt;
+	public Text coinTxt;
 
 	private int score, moveCounter;
 
 	void Awake() {
 		instance = GetComponent<GUIManager>();
-		moveCounter = 99;
+		moveCounter = 10;
 	}
 
 	// Show the game over panel
@@ -53,7 +54,9 @@ public class GUIManager : MonoBehaviour {
 		} else {
 			highScoreTxt.text = "Best: " + PlayerPrefs.GetInt("HighScore").ToString();
 		}
-
+		float coinsEarned = 0.1f * (int)(System.Math.Ceiling(score / 10.0d) * 10);
+		coinTxt.text = "Congrats, you earned " + coinsEarned + " coins!";
+		GameData.coins += coinsEarned;
 		yourScoreTxt.text = score.ToString();
 	}
 
@@ -65,6 +68,7 @@ public class GUIManager : MonoBehaviour {
 		set {
 			score = value;
 			scoreTxt.text = score.ToString();
+			
 		}
 	}
 

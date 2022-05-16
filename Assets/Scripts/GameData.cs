@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class GameData : MonoBehaviour
 {
-
+    //Stores IDs, price&mana, quantity within array
     public static int[,] shopItems = new int[11, 11];
+    //store coins (starting purse)
+    public static float coins = 1000;
 
     public void Awake()
     {
