@@ -10,7 +10,7 @@ public class SaveCoins : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CoinsTXT.text = "Coins:" + GameData.coins.ToString();
+        CoinsTXT.text = GameData.coins.ToString();
     }
 
 }
