@@ -25,48 +25,44 @@ public class MoveScript : MonoBehaviour
 
     void Start()
     {
+        transform.position = GameData.tigerPosition;
         targetPosition = transform.position;
     }
-    
-
 
 
 
     // Update is called once per frame
     void Update()
     {
+
+        //This gets the target position if screen has been pressed
+
+        //replace touch with mouse for testing purposes
+        if ( Input.GetMouseButtonDown(0)) //Input.touchCount(0) > 0
+        {
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
+
+            Vector3 touch = Input.mousePosition; //Input.GetTouch
+            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch); //touch.position
+
+            float x = Mathf.Clamp(touchPosition.x, xLowerBound, xUpperBound);
+            float y = Mathf.Clamp(touchPosition.y, yLowerBound, yUpperBound);
         
+            //normalize step vector
+            //when we're close to final position we stop
 
-            //This gets the target position if screen has been pressed
-
-            //replace touch with mouse for testing purposes
-            if ( Input.GetMouseButtonDown(0)) //Input.touchCount(0) > 0
-            {
-            if (EventSystem.current.IsPointerOverGameObject())
+            //Doesn't allow player to click above y clamp
+            if (y == yUpperBound)
             {
                 return;
             }
 
-                Vector3 touch = Input.mousePosition; //Input.GetTouch
-                Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch); //touch.position
-
-                float x = Mathf.Clamp(touchPosition.x, xLowerBound, xUpperBound);
-                float y = Mathf.Clamp(touchPosition.y, yLowerBound, yUpperBound);
-        
-                //normalize step vector
-                //when we're close to final position we stop
-
-                //Doesn't allow player to click above y clamp
-                if (y == yUpperBound)
-                {
-                    return;
-                }
-
-                Vector3 constrainedTouchPosition = new Vector3(x, y, 0);
+            Vector3 constrainedTouchPosition = new Vector3(x, y, 0);
                 
-                targetPosition = constrainedTouchPosition;
-
-            //}
+            targetPosition = constrainedTouchPosition;
 
         }
 
@@ -91,7 +87,7 @@ public class MoveScript : MonoBehaviour
             
             //Adds stepVector to pet position           
             transform.position += stepVector;
-
+            GameData.tigerPosition += stepVector;
 
             //The horizontal 'speed' of the pet determines the animation transition
             //switching from idle to walk and vice versa when the pet is above and below a

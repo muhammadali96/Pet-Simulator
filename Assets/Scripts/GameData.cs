@@ -8,6 +8,7 @@ public class GameData : MonoBehaviour
     public static int[,] shopItems = new int[11, 11];
     //store coins (starting purse)
     public static float coins = 100;
+    public static Vector3 tigerPosition;
 
     public void Awake()
     {
