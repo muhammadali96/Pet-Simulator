@@ -13,11 +13,16 @@ public class Timer : MonoBehaviour
     public GameObject EndPanel;
     public Text coins;
     public GameObject Animation;
+    public GameObject startButton;
+    public GameObject stopButton;
+    public GameObject background;
+   
 
     // Start is called before the first frame update
     void Start()
     {
         currentTime = 0;
+        Animation.gameObject.GetComponent<VideoPlayer>().Pause();
     }
 
     // Update is called once per frame
@@ -33,7 +38,9 @@ public class Timer : MonoBehaviour
     {
         stopWatchActive = true;
         Animation.gameObject.GetComponent<VideoPlayer>().Play();
-
+        startButton.SetActive(false);
+        stopButton.SetActive(true);
+        background.SetActive(false);
     }
 
     public void StopTimer()
