@@ -21,6 +21,7 @@ public class ReadInput : MonoBehaviour
     public void ReadStringInput(string s)
     {
         input = s;
+        PlayerPrefs.SetString("Player Name", input);
         Debug.Log(input);
     }
 

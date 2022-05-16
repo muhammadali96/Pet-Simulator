@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Intro.unity
     guid: c2fa9bc5b4b9cf841a6cb94dfeaca976
+  - enabled: 1
+    path: Assets/Scenes/Pet Arrival.unity
+    guid: a411e6b17019ba845924fbd97aff4eaa
   m_configObjects: {}
