@@ -10,6 +10,9 @@ public class GameData : MonoBehaviour
     //store coins (starting purse)
     public static float coins = 100;
     public static Vector3 tigerPosition;
+    public static float hungerLevel = 100;
+    public static float energyLevel = 100;
+    public static float moodLevel = 100;
 
     public void Awake()
     {

@@ -20,7 +20,7 @@ public class HungerFillStatusBar : MonoBehaviour
     {
         //PlayerData data = SaveSystem.LoadPlayer();
 
-        //currentLevel = data.currentLevel;
+        currentLevel = GameData.hungerLevel;
         sadnessController = GameObject.FindGameObjectWithTag("Pet").GetComponent<SadnessController>();
     }
 
@@ -42,6 +42,7 @@ public class HungerFillStatusBar : MonoBehaviour
         {
             timer = 0f;
             currentLevel--;
+            GameData.hungerLevel = currentLevel;
         }
         if (maxLevel == 0)
         {

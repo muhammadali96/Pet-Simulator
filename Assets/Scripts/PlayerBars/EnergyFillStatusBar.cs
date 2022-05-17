@@ -19,7 +19,7 @@ public class EnergyFillStatusBar : MonoBehaviour
     {
         //PlayerData data = SaveSystem.LoadPlayer();
 
-        //currentLevel = data.currentLevel;
+        currentLevel = GameData.energyLevel;
         sadnessController = GameObject.FindGameObjectWithTag("Pet").GetComponent<SadnessController>();
     }
 
@@ -41,6 +41,7 @@ public class EnergyFillStatusBar : MonoBehaviour
         {
             timer = 0f;
             currentLevel--;
+            GameData.energyLevel = currentLevel;
         }
         if (maxLevel == 0)
         {
