@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 95807241}
   - component: {fileID: 95807243}
   - component: {fileID: 95807242}
+  - component: {fileID: 95807244}
   m_Layer: 5
   m_Name: Back panel
   m_TagString: Untagged
@@ -303,6 +304,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 95807240}
   m_CullTransparentMesh: 1
+--- !u!95 &95807244
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95807240}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 758babdd91c564141a87dcd55bad9a2b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &153721086
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,6 +573,7 @@ GameObject:
   - component: {fileID: 290092613}
   - component: {fileID: 290092612}
   - component: {fileID: 290092615}
+  - component: {fileID: 290092616}
   m_Layer: 5
   m_Name: InputField
   m_TagString: Untagged
@@ -711,6 +732,25 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.2784314}
   m_EffectDistance: {x: -1.99, y: -2.56}
   m_UseGraphicAlpha: 1
+--- !u!95 &290092616
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290092610}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f0fa5659a773ffb4da977bfc986f5852, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &341219847
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,6 +763,7 @@ GameObject:
   - component: {fileID: 341219851}
   - component: {fileID: 341219850}
   - component: {fileID: 341219849}
+  - component: {fileID: 341219852}
   m_Layer: 5
   m_Name: StartGameButton
   m_TagString: Untagged
@@ -844,6 +885,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341219847}
   m_CullTransparentMesh: 1
+--- !u!95 &341219852
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341219847}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bb45848952fcc934eac89b060866566d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &450691726
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,6 +1195,7 @@ GameObject:
   - component: {fileID: 1008475891}
   - component: {fileID: 1008475893}
   - component: {fileID: 1008475892}
+  - component: {fileID: 1008475894}
   m_Layer: 5
   m_Name: TIger
   m_TagString: Untagged
@@ -1199,6 +1260,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008475890}
   m_CullTransparentMesh: 1
+--- !u!95 &1008475894
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008475890}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ce32f0926dcfa140845844458080b33, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1879006761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,6 +1290,7 @@ GameObject:
   - component: {fileID: 1879006762}
   - component: {fileID: 1879006764}
   - component: {fileID: 1879006763}
+  - component: {fileID: 1879006765}
   m_Layer: 5
   m_Name: Arrival text
   m_TagString: Untagged
@@ -1274,3 +1355,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879006761}
   m_CullTransparentMesh: 1
+--- !u!95 &1879006765
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879006761}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6ee7fd7f94278d3498db6faf0f368ae6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
