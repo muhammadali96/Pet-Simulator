@@ -34,12 +34,17 @@ public class HungerFillStatusBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
 
         //SaveSystem.SavePlayer(this);
         timer += Time.deltaTime;
 
         if (timer >= Delay)
         {
+            if (currentLevel >= 100)
+            {
+                currentLevel = 100;
+            }
             timer = 0f;
             currentLevel--;
             GameData.hungerLevel = currentLevel;

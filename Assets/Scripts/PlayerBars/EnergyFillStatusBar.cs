@@ -39,6 +39,10 @@ public class EnergyFillStatusBar : MonoBehaviour
 
         if (timer >= Delay)
         {
+            if (currentLevel >= 100)
+            {
+                currentLevel = 100;
+            }
             timer = 0f;
             currentLevel--;
             GameData.energyLevel = currentLevel;

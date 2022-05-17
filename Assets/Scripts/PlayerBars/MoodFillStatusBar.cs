@@ -40,6 +40,10 @@ public class MoodFillStatusBar : MonoBehaviour
 
         if (timer >= DelayAmount)
         {
+            if (currentLevel >= 100)
+            {
+                currentLevel = 100;
+            }
             timer = 0f;
             currentLevel--;
             GameData.moodLevel = currentLevel;
