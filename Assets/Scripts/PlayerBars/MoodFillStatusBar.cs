@@ -20,7 +20,7 @@ public class MoodFillStatusBar : MonoBehaviour
     {
         //PlayerData data = SaveSystem.LoadPlayer();
 
-        //currentLevel = data.currentLevel;
+        currentLevel = GameData.moodLevel;
         sadnessController = GameObject.FindGameObjectWithTag("Pet").GetComponent<SadnessController>();
     }
 
@@ -40,8 +40,13 @@ public class MoodFillStatusBar : MonoBehaviour
 
         if (timer >= DelayAmount)
         {
+            if (currentLevel >= 100)
+            {
+                currentLevel = 100;
+            }
             timer = 0f;
             currentLevel--;
+            GameData.moodLevel = currentLevel;
         }
         if (maxLevel == 0)
         {

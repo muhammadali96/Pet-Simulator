@@ -7,6 +7,7 @@ public class DetectCollision : MonoBehaviour
 {
     public HungerFillStatusBar hungerBar;
     public MoodFillStatusBar moodBar;
+    public EnergyFillStatusBar energyBar;
     public GameObject InventoryManager;
 
 
@@ -58,10 +59,17 @@ public class DetectCollision : MonoBehaviour
             moodBar.currentLevel += GameData.shopItems[2, 9];
             this.GetComponent<Animator>().SetTrigger("Playing");
         }
+        else if (collision.gameObject.name.Contains("mouse"))
+        {
+            moodBar.currentLevel += GameData.shopItems[2, 10];
+            this.GetComponent<Animator>().SetTrigger("Playing");
+        }
         else if (collision.gameObject.name.Contains("hand"))
         {
-            moodBar.currentLevel += GameData.shopItems[2, 6];
-            this.GetComponent<Animator>().SetTrigger("Playing");
+
+            energyBar.currentLevel++;
+            this.GetComponent<Animator>().SetTrigger("Sleeping");
+            return;
         }
         
         
