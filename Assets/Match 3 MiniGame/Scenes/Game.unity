@@ -2055,11 +2055,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characters:
   - {fileID: 21300000, guid: 41f2195f49136594a849c91408353ec6, type: 3}
-  - {fileID: 21300000, guid: f5b5235537b336f458c6235fcf898281, type: 3}
-  - {fileID: 21300000, guid: 345eb46c9e6d2ce4b8885b9dc9285700, type: 3}
-  - {fileID: 21300000, guid: 2cc5aa85d16ce7f408f750132e9fdaa8, type: 3}
-  - {fileID: 21300000, guid: 6f52f6107a722fe4fb0f69391ac423b0, type: 3}
-  - {fileID: 21300000, guid: 61a96039b5205024ea70b9e58487879b, type: 3}
+  - {fileID: 21300000, guid: 7a14c2913f012fd4c9810eec0e8ce4ca, type: 3}
+  - {fileID: 21300000, guid: 90692a90bcbce474e819f7a0d9f30323, type: 3}
+  - {fileID: 21300000, guid: 42b03b7fca95ca047b9a00f88344f341, type: 3}
+  - {fileID: 21300000, guid: 7f8da1b263329ef4ba3cb08d276ea00c, type: 3}
+  - {fileID: 21300000, guid: a5ae2efb3db332345a8e4bb911da0048, type: 3}
   tile: {fileID: 1000010131827792, guid: 6417c2a8214b7ab45b35ac5e9e62c2cb, type: 3}
   xSize: 7
   ySize: 7
