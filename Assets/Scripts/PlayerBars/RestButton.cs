@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class RestButton : MonoBehaviour
 {
-    public EnergyFillStatusBar energyBar;
-    public GameObject objectToAnimate;
+
+    public GameObject hand;
 
     public void Rest()
     {
-        energyBar.currentLevel++;
-        objectToAnimate.GetComponent<Animator>().SetTrigger("Sleeping");
+        bool isActive = hand.activeSelf;
+        hand.SetActive(!isActive);
     }
 }

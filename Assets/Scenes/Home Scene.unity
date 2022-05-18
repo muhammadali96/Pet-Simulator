@@ -587,6 +587,67 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &82269608
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4078461104945473068, guid: c72ae44b3a39b7042b18f7e544b6c5a8, type: 3}
+      propertyPath: m_Name
+      value: hand
+      objectReference: {fileID: 0}
+    - target: {fileID: 4078461104945473068, guid: c72ae44b3a39b7042b18f7e544b6c5a8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754107719382211086, guid: c72ae44b3a39b7042b18f7e544b6c5a8, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754107719382211086, guid: c72ae44b3a39b7042b18f7e544b6c5a8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.814
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754107719382211086, guid: c72ae44b3a39b7042b18f7e544b6c5a8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.709
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754107719382211086, guid: c72ae44b3a39b7042b18f7e544b6c5a8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754107719382211086, guid: c72ae44b3a39b7042b18f7e544b6c5a8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754107719382211086, guid: c72ae44b3a39b7042b18f7e544b6c5a8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754107719382211086, guid: c72ae44b3a39b7042b18f7e544b6c5a8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754107719382211086, guid: c72ae44b3a39b7042b18f7e544b6c5a8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754107719382211086, guid: c72ae44b3a39b7042b18f7e544b6c5a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754107719382211086, guid: c72ae44b3a39b7042b18f7e544b6c5a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754107719382211086, guid: c72ae44b3a39b7042b18f7e544b6c5a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c72ae44b3a39b7042b18f7e544b6c5a8, type: 3}
 --- !u!1 &114357198
 GameObject:
   m_ObjectHideFlags: 0
@@ -3586,8 +3647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6de45f033c5844cee8e2b31ff3661ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energyBar: {fileID: 2044558142}
-  objectToAnimate: {fileID: 1293332781}
+  hand: {fileID: 1125022455}
 --- !u!1 &878313148
 GameObject:
   m_ObjectHideFlags: 0
@@ -4225,6 +4285,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b912031a57574b558cfa6c22d0b884b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1125022455 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4078461104945473068, guid: c72ae44b3a39b7042b18f7e544b6c5a8, type: 3}
+  m_PrefabInstance: {fileID: 82269608}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1125022456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125022455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce60be3c0f29a4db782d914a497b4040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1181574527
 GameObject:
   m_ObjectHideFlags: 0
@@ -4504,6 +4581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hungerBar: {fileID: 660601643}
   moodBar: {fileID: 1875342760}
+  energyBar: {fileID: 2044558142}
   InventoryManager: {fileID: 1085370130}
 --- !u!1 &1311735528
 GameObject:

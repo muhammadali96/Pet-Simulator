@@ -7,6 +7,7 @@ public class DetectCollision : MonoBehaviour
 {
     public HungerFillStatusBar hungerBar;
     public MoodFillStatusBar moodBar;
+    public EnergyFillStatusBar energyBar;
     public GameObject InventoryManager;
 
 
@@ -60,8 +61,10 @@ public class DetectCollision : MonoBehaviour
         }
         else if (collision.gameObject.name.Contains("hand"))
         {
-            moodBar.currentLevel += GameData.shopItems[2, 6];
-            this.GetComponent<Animator>().SetTrigger("Playing");
+
+            energyBar.currentLevel++;
+            this.GetComponent<Animator>().SetTrigger("Sleeping");
+            return;
         }
         
         
