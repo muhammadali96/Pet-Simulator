@@ -55,7 +55,7 @@ public class GUIManager : MonoBehaviour {
 			highScoreTxt.text = "Best: " + PlayerPrefs.GetInt("HighScore").ToString();
 		}
 		float coinsEarned = 0.1f * (int)(System.Math.Ceiling(score / 10.0d) * 10);
-		coinTxt.text = "Congrats, you earned " + coinsEarned + " coins!";
+		coinTxt.text = "You earned " + coinsEarned + " coins!";
 		GameData.coins += coinsEarned;
 		yourScoreTxt.text = score.ToString();
 	}
