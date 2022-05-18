@@ -59,6 +59,11 @@ public class DetectCollision : MonoBehaviour
             moodBar.currentLevel += GameData.shopItems[2, 9];
             this.GetComponent<Animator>().SetTrigger("Playing");
         }
+        else if (collision.gameObject.name.Contains("mouse"))
+        {
+            moodBar.currentLevel += GameData.shopItems[2, 10];
+            this.GetComponent<Animator>().SetTrigger("Playing");
+        }
         else if (collision.gameObject.name.Contains("hand"))
         {
 

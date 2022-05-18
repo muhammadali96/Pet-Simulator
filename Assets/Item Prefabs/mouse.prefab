@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2396057479293049506}
   - component: {fileID: 7983519388169252148}
   m_Layer: 0
-  m_Name: hand
+  m_Name: mouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
