@@ -35,4 +35,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pet Arrival.unity
     guid: a411e6b17019ba845924fbd97aff4eaa
+  - enabled: 1
+    path: Assets/Scenes/CBT Activty/1 Intro and video.unity
+    guid: 6e71f78b01b0fd44585bf7e0a83502d0
+  - enabled: 1
+    path: Assets/Scenes/CBT Activty/2 Example breakdown.unity
+    guid: ef7a93893d617e040ae9bdc8aecca3af
+  - enabled: 1
+    path: Assets/Scenes/CBT Activty/3 Negative example.unity
+    guid: 475ac991eb2c62c43b3f6d83bc5609c5
+  - enabled: 1
+    path: Assets/Scenes/CBT Activty/4 Positive example.unity
+    guid: bd5a129b2d696bc459fd845773c2b37b
+  - enabled: 1
+    path: Assets/Scenes/CBT Activty/5 Negative player input.unity
+    guid: af3a5908232259042b12b509cefd9b28
+  - enabled: 1
+    path: Assets/Scenes/CBT Activty/6 Positive player input.unity
+    guid: 01bb8d88baf9f164b9fcb69e9d899f53
+  - enabled: 1
+    path: Assets/Scenes/CBT Activty/Example negative.unity
+    guid: a010b0b8c6cc7634bbe3451f4b6c9aa8
+  - enabled: 1
+    path: Assets/Scenes/CBT Activty/Help scene.unity
+    guid: a256f57538bb01042a16c8e523cbab8f
+  - enabled: 1
+    path: Assets/Scenes/CBT Activty/Negative help.unity
+    guid: 557984ba3740e174fa9aa59729b4608a
+  - enabled: 1
+    path: Assets/Scenes/CBT Activty/Positive help scene.unity
+    guid: e8d54c5b9008f7845b48586b786f4f2b
   m_configObjects: {}
