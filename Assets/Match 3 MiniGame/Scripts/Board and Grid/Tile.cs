@@ -110,57 +110,14 @@ public class Tile : MonoBehaviour {
 	private List<GameObject> FindMatch(Vector2 castDir) {
 		List<GameObject> matchingTiles = new List<GameObject>();
 		RaycastHit2D hit = Physics2D.Raycast(transform.position, castDir);
-		if (matchingTiles.Count == 3)
-		{
-			return matchingTiles;
-		}
-				
-		while (hit.collider != null && DoesCompliment(hit.collider.GetComponent<SpriteRenderer>().sprite, render.sprite, matchingTiles))
-		{
+		while (hit.collider != null && hit.collider.GetComponent<SpriteRenderer>().sprite == render.sprite) {
 			matchingTiles.Add(hit.collider.gameObject);
 			hit = Physics2D.Raycast(hit.collider.transform.position, castDir);
 		}
 		return matchingTiles;
 	}
 
-	private bool DoesCompliment(Sprite nextTile, Sprite currentTile, List<GameObject> matchingTiles)
-    {
-        if (getSignOf(currentTile) == getSignOf(nextTile) && checkCategory(nextTile, matchingTiles))
-		{
-			return true;
-		}
-		else return false;
-    }
-
-	private bool checkCategory(Sprite nextTile, List<GameObject> matchingTiles)
-    {
-		//returns true if nextTile category is not the same as any catgeory of tiles held within matching tiles
-		foreach (var x in matchingTiles)
-		{
-			if (getCategoryOf(x) == nextTile.name.Split()[1])
-			{
-				return false;
-			}
-		}
-		return true;
-	}
-
-	private string getSignOf(Sprite Tile)
-    {
-		Debug.Log("this works");
-		return Tile.name.Split()[0];
-
-
-    }
-
-    private string getCategoryOf(GameObject Tile)
-    {
-        return Tile.GetComponent<SpriteRenderer>().sprite.name.Split()[1];
-
-
-    }
-
-    private void ClearMatch(Vector2[] paths) {
+	private void ClearMatch(Vector2[] paths) {
 		List<GameObject> matchingTiles = new List<GameObject>();
 		for (int i = 0; i < paths.Length; i++) { matchingTiles.AddRange(FindMatch(paths[i])); }
 		if (matchingTiles.Count >= 2) {
