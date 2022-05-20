@@ -383,7 +383,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0963a2139d0f6a44c821129de523d4fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PopUp: {fileID: 709376300}
+  HelpPopUp: {fileID: 1390702038}
+  BackgroundScene: {fileID: 1876707492}
+  situationtext: {fileID: 1756420918}
 --- !u!4 &84846483
 Transform:
   m_ObjectHideFlags: 0
@@ -559,7 +561,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 211723342}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 84846482}
+        m_TargetAssemblyTypeName: CBTButtonManager, Assembly-CSharp
+        m_MethodName: GoToPositiveHelp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &211723342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2109,7 +2123,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 688745993}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 84846482}
+        m_TargetAssemblyTypeName: CBTButtonManager, Assembly-CSharp
+        m_MethodName: GoToIntro
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &688745993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2392,7 +2418,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 774709754}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 84846482}
+        m_TargetAssemblyTypeName: CBTButtonManager, Assembly-CSharp
+        m_MethodName: GoToCbtInstructions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &774709754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2837,7 +2875,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 878086732}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 84846482}
+        m_TargetAssemblyTypeName: CBTButtonManager, Assembly-CSharp
+        m_MethodName: ToggleHelp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &878086732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3166,7 +3216,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1035757970}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 84846482}
+        m_TargetAssemblyTypeName: CBTButtonManager, Assembly-CSharp
+        m_MethodName: selectPositive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1035757970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4046,7 +4108,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 84846482}
         m_TargetAssemblyTypeName: CBTButtonManager, Assembly-CSharp
-        m_MethodName: GoToHelp
+        m_MethodName: ToggleHelp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4563,7 +4625,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1677526239}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 84846482}
+        m_TargetAssemblyTypeName: CBTButtonManager, Assembly-CSharp
+        m_MethodName: TakeScreenShot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1677526239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4929,7 +5003,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1705846101}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 84846482}
+        m_TargetAssemblyTypeName: CBTButtonManager, Assembly-CSharp
+        m_MethodName: GoToNegativeHelp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1705846101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5561,7 +5647,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1883358927}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 84846482}
+        m_TargetAssemblyTypeName: CBTButtonManager, Assembly-CSharp
+        m_MethodName: selectNegative
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1883358927
 MonoBehaviour:
   m_ObjectHideFlags: 0

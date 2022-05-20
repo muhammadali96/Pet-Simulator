@@ -48,15 +48,15 @@ EditorBuildSettings:
     path: Assets/Scenes/CBT Activty/4 Positive example.unity
     guid: bd5a129b2d696bc459fd845773c2b37b
   - enabled: 1
-    path: Assets/Scenes/CBT Activty/5 Negative player input.unity
+    path: Assets/Scenes/CBT Activty/5 Player input.unity
     guid: af3a5908232259042b12b509cefd9b28
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CBT Activty/6 Positive player input.unity
     guid: 01bb8d88baf9f164b9fcb69e9d899f53
   - enabled: 1
     path: Assets/Scenes/CBT Activty/Intro help.unity
     guid: a010b0b8c6cc7634bbe3451f4b6c9aa8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CBT Activty/Help scene.unity
     guid: a256f57538bb01042a16c8e523cbab8f
   - enabled: 1
