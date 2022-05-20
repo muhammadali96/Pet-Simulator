@@ -42,6 +42,11 @@ public class CBTButtonManager : MonoBehaviour
         SceneManager.LoadScene("5 Player Input");
     }
 
+    public void GoToCloseUp()
+    {
+        SceneManager.LoadScene("Close Up Scene");
+    }
+
     public void ToggleHelp()
     {
         bool HelpIsActive = HelpPopUp.activeSelf;
