@@ -451,7 +451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5254902}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.23529412}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1203,11 +1203,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 413444613125729459, guid: 6a2e44e682f3ea5469046c0ccfa27945, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 249.2392
+      value: 163
       objectReference: {fileID: 0}
     - target: {fileID: 413444613125729459, guid: 6a2e44e682f3ea5469046c0ccfa27945, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 128.9046
+      value: 158
       objectReference: {fileID: 0}
     - target: {fileID: 413444613125729459, guid: 6a2e44e682f3ea5469046c0ccfa27945, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1218,8 +1218,20 @@ PrefabInstance:
       value: -74
       objectReference: {fileID: 0}
     - target: {fileID: 1716588739968350176, guid: 6a2e44e682f3ea5469046c0ccfa27945, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2465624cb6700b24cb16fc5c7c744b9f, type: 3}
+    - target: {fileID: 1716588739968350176, guid: 6a2e44e682f3ea5469046c0ccfa27945, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1716588739968350176, guid: 6a2e44e682f3ea5469046c0ccfa27945, type: 3}
       propertyPath: m_Color.g
-      value: 0.3882353
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1716588739968350176, guid: 6a2e44e682f3ea5469046c0ccfa27945, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2412903546795732576, guid: 6a2e44e682f3ea5469046c0ccfa27945, type: 3}
       propertyPath: m_Color.b
@@ -2050,13 +2062,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characters:
-  - {fileID: 21300000, guid: d0642303c3ea954459dc312b930ea27d, type: 3}
-  - {fileID: 21300000, guid: 513efbe3009bdb04f9013d28010ca5bf, type: 3}
-  - {fileID: 21300000, guid: 896d217061725074dbca74a6ea59815f, type: 3}
-  - {fileID: 21300000, guid: e61a9cacb6991554e9ba8f0f19381eda, type: 3}
-  - {fileID: 21300000, guid: e3169e90983853d4d9d73233512118e2, type: 3}
-  - {fileID: 21300000, guid: dca7a45bef5bffa4395181b03e04d081, type: 3}
-  - {fileID: 21300000, guid: 6e84ec6047673d440aa377e4980bfea8, type: 3}
+  - {fileID: 21300000, guid: 2c1698ff3ba0a8b4eacb881f74bf69f8, type: 3}
+  - {fileID: 21300000, guid: 7f8da1b263329ef4ba3cb08d276ea00c, type: 3}
+  - {fileID: 21300000, guid: eb7837b0a090dae468916e526c1072e2, type: 3}
+  - {fileID: 21300000, guid: 7f8da1b263329ef4ba3cb08d276ea00c, type: 3}
+  - {fileID: 21300000, guid: 38828e0d40ab1cb4cb408a5973dc0174, type: 3}
+  - {fileID: 21300000, guid: 7c39f2d3c5e9585459dd6444e6895333, type: 3}
   tile: {fileID: 1000010131827792, guid: 6417c2a8214b7ab45b35ac5e9e62c2cb, type: 3}
   xSize: 7
   ySize: 7
