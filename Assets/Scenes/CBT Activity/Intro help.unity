@@ -568,7 +568,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1973275583}
         m_TargetAssemblyTypeName: CBTButtonManager, Assembly-CSharp
-        m_MethodName: GoBackToPlayerInput
+        m_MethodName: GoToPlayerInput
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -789,6 +789,7 @@ MonoBehaviour:
   HelpPopUp: {fileID: 0}
   BackgroundScene: {fileID: 0}
   situationtext: {fileID: 0}
+  EndPanel: {fileID: 0}
 --- !u!4 &1973275584
 Transform:
   m_ObjectHideFlags: 0

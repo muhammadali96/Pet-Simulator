@@ -11,6 +11,7 @@ public class CBTButtonManager : MonoBehaviour
     public GameObject HelpPopUp;
     public GameObject BackgroundScene;
     public TextMeshProUGUI situationtext;
+    public GameObject EndPanel;
 
     public void GoToNext()
     {
@@ -37,9 +38,14 @@ public class CBTButtonManager : MonoBehaviour
         SceneManager.LoadScene("Instructions");
     }
 
-    public void GoBackToPlayerInput()
+    public void GoToInstructionPopup()
     {
-        SceneManager.LoadScene("5 Player Input");
+        SceneManager.LoadScene("5 Instruction Popup");
+    }
+
+    public void GoToPlayerInput()
+    {
+        SceneManager.LoadScene("6 Player Input");
     }
 
     public void GoToCloseUp()
@@ -56,7 +62,6 @@ public class CBTButtonManager : MonoBehaviour
         BackgroundScene.SetActive(!BackgroundIsActive);
     }
 
-
     public void selectPositive()
     {
         situationtext.text = "SITUATION: (POSITIVE)";
@@ -70,6 +75,7 @@ public class CBTButtonManager : MonoBehaviour
     public void TakeScreenShot()
     {
         ScreenCapture.CaptureScreenshot(System.DateTime.Now.ToString().Replace('/', '-')+".png");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        EndPanel.SetActive(true);
+        GameData.coins += 50f;
     }
 }

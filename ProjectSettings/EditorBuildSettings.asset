@@ -48,17 +48,20 @@ EditorBuildSettings:
     path: Assets/Scenes/CBT Activity/4 Positive example.unity
     guid: bd5a129b2d696bc459fd845773c2b37b
   - enabled: 1
-    path: Assets/Scenes/CBT Activity/5 Player input.unity
+    path: Assets/Scenes/CBT Activity/5 Instruction Popup.unity
+    guid: d858c49638d0d4761827f293dfd5e7eb
+  - enabled: 1
+    path: Assets/Scenes/CBT Activity/6 Player input.unity
     guid: af3a5908232259042b12b509cefd9b28
   - enabled: 0
-    path: Assets/Scenes/CBT Activity/6 Positive player input.unity
-    guid: 01bb8d88baf9f164b9fcb69e9d899f53
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/CBT Activity/Intro help.unity
     guid: a010b0b8c6cc7634bbe3451f4b6c9aa8
   - enabled: 0
-    path: Assets/Scenes/CBT Activty/Help scene.unity
-    guid: a256f57538bb01042a16c8e523cbab8f
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/CBT Activity/Instructions.unity
     guid: 557984ba3740e174fa9aa59729b4608a
