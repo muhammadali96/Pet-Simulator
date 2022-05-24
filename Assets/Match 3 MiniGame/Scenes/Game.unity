@@ -2070,8 +2070,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: dca7a45bef5bffa4395181b03e04d081, type: 3}
   - {fileID: 21300000, guid: 6e84ec6047673d440aa377e4980bfea8, type: 3}
   tile: {fileID: 1000010131827792, guid: 6417c2a8214b7ab45b35ac5e9e62c2cb, type: 3}
-  xSize: 7
-  ySize: 7
+  xSize: 6
+  ySize: 6
 --- !u!4 &1958837308
 Transform:
   m_ObjectHideFlags: 0
