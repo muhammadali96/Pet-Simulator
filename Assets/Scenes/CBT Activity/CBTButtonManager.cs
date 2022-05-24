@@ -74,7 +74,7 @@ public class CBTButtonManager : MonoBehaviour
 
     public void TakeScreenShot()
     {
-        ScreenCapture.CaptureScreenshot(System.DateTime.Now.ToString().Replace('/', '-')+".png");
+        ScreenCapture.CaptureScreenshot(System.DateTime.Now.ToString().Replace('/', '-').Substring(0, 10) + ".png");
         EndPanel.SetActive(true);
         GameData.coins += 50f;
     }
