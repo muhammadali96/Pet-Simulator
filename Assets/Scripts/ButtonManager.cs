@@ -56,6 +56,13 @@ public class ButtonManager : MonoBehaviour
 
     public void LoadCbtActivity()
     {
-        SceneManager.LoadScene("1 Intro and video");
+        if(GameData.haveReadCBTInstructions == true)
+        {
+        SceneManager.LoadScene("6 Player input");
+
+        } else
+        {
+            SceneManager.LoadScene("1 Intro and video");
+        }
     }
 }

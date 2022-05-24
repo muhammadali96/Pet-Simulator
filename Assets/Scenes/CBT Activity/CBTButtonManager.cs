@@ -15,6 +15,7 @@ public class CBTButtonManager : MonoBehaviour
 
     public void GoToNext()
     {
+        GameData.haveReadCBTInstructions = true;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

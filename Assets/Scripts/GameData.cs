@@ -13,6 +13,7 @@ public class GameData : MonoBehaviour
     public static float hungerLevel = 100;
     public static float energyLevel = 100;
     public static float moodLevel = 100;
+    public static bool haveReadCBTInstructions = false;
 
     public void Awake()
     {
