@@ -53,4 +53,9 @@ public class ButtonManager : MonoBehaviour
     {
         SceneManager.LoadScene("Pet Arrival");
     }
+
+    public void LoadCbtActivity()
+    {
+        SceneManager.LoadScene("1 Intro and video");
+    }
 }
