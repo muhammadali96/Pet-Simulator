@@ -39,6 +39,7 @@ public class HungerFillStatusBar : MonoBehaviour
         //SaveSystem.SavePlayer(this);
         timer += Time.deltaTime;
 
+        //smaller the delay the faster it increments
         if (timer >= Delay)
         {
             if (currentLevel >= 100)

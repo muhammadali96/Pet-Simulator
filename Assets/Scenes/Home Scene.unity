@@ -3267,7 +3267,7 @@ MonoBehaviour:
   fillImage: {fileID: 629465704}
   currentLevel: 100
   maxLevel: 100
-  Delay: 5
+  Delay: 1
 --- !u!1 &764195674
 GameObject:
   m_ObjectHideFlags: 0
@@ -6300,7 +6300,7 @@ MonoBehaviour:
   fillImage: {fileID: 1225149011}
   currentLevel: 100
   maxLevel: 100
-  DelayAmount: 5
+  DelayAmount: 1
 --- !u!1 &1940924356
 GameObject:
   m_ObjectHideFlags: 0
@@ -6723,7 +6723,7 @@ MonoBehaviour:
   fillImage: {fileID: 1495677258}
   currentLevel: 100
   maxLevel: 100
-  Delay: 5
+  Delay: 1
 --- !u!1 &2105009967
 GameObject:
   m_ObjectHideFlags: 0
